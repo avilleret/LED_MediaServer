@@ -1,4 +1,5 @@
-#N canvas 340 154 1456 925 10;
+#N canvas 463 104 1456 925 10;
+#X declare -path ../osc;
 #X declare -path ../osc;
 #X declare -path ../osc;
 #X declare -path ../osc;
@@ -18,8 +19,8 @@
 #X obj 141 393 loadbang;
 #X obj 212 229 t a a;
 #X obj 239 450 pix_texture;
-#X msg 341 406 quality \$1;
-#X obj 341 386 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X msg 357 421 quality \$1;
+#X obj 357 401 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #N canvas 551 167 531 554 roi 0;
 #X obj 227 56 * 6;
@@ -596,7 +597,16 @@ f 5;
 #X restore 239 728 pd adapt;
 #X obj 212 137 r render_text_\$2;
 #X obj 976 191 oscparam /\$2/text/\$1/text;
+#X obj 1001 655 r \$0-quality_out;
+#X obj 986 745 s \$0-quality_in;
+#X obj 1028 697 oscparam /\$2/text/\$1/quality;
+#X obj 677 462 tgl 15 0 \$0-quality_out \$0-quality_in quality 17 7
+0 10 -262144 -1 -1 0 1;
+#X obj 357 377 r \$0-quality_out;
+#X obj 986 725 f;
+#X obj 1001 676 t f f;
 #X connect 0 0 8 0;
+#X connect 1 0 4 0;
 #X connect 2 0 1 0;
 #X connect 3 0 9 0;
 #X connect 3 1 0 0;
@@ -674,4 +684,10 @@ f 5;
 #X connect 100 2 43 2;
 #X connect 101 0 37 0;
 #X connect 102 0 94 0;
+#X connect 103 0 109 0;
+#X connect 105 0 108 0;
+#X connect 107 0 6 0;
+#X connect 108 0 104 0;
+#X connect 109 0 108 1;
+#X connect 109 1 105 0;
 #X coords 0 -1 1 1 150 340 1 650 150;
