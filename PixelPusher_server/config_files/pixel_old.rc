@@ -1,0 +1,24 @@
+# PixelPusher configuration file
+# see : https://sites.google.com/a/heroicrobot.com/pixelpusher/home/getting-started
+
+# Group 1 = Banniere
+group=1
+# Banniere number
+controller=1
+
+stripsattached=8
+# 84 pix/col x 5 col / strip = 420 pix / strip
+pixels=420
+swap=12345678
+strip1=apa102
+strip2=apa102
+strip3=apa102
+strip4=apa102
+strip5=apa102
+strip6=apa102
+strip7=apa102
+strip8=apa102
+
+ether=10.42.0.11
+netmask=0.0.0.0
+gateway=10.42.0.1
