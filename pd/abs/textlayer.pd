@@ -1,4 +1,4 @@
-#N canvas 933 613 985 377 10;
+#N canvas 819 524 985 377 10;
 #X declare -path ../osc;
 #X declare -path ../osc;
 #X declare -path ../osc;
@@ -96,4 +96,4 @@
 #X obj 816 16 text_display 6 \$1;
 #X obj 656 16 text_display 5 \$1;
 #X obj 16 16 text_display 1 \$1;
-#X obj 176 16 text_display 2 \$1;
+#X obj 176 15 text_display 2 \$1;
