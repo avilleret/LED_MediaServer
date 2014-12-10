@@ -1,4 +1,9 @@
-#N canvas 1322 274 405 163 10;
+#N canvas 1320 290 405 163 10;
+#X declare -path ../osc;
+#X declare -path ../osc;
+#X declare -path ../osc;
+#X declare -path ../osc;
+#X declare -path ../osc;
 #X declare -path ../osc;
 #X declare -path ../osc;
 #X declare -path ../osc;
@@ -345,20 +350,26 @@
 #X declare -path ../osc;
 #X declare -path ../osc;
 #X declare -path ../osc;
-#N canvas 682 268 450 342 gemwin 0;
+#X declare -path ../osc;
+#X declare -path ../osc;
+#X declare -path ../osc;
+#X declare -path ../osc;
+#X declare -path ../osc;
+#N canvas 680 284 450 342 gemwin 0;
 #X msg 38 79 destroy;
 #X obj 38 57 sel 0 1;
-#X obj 38 39 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
+#X obj 38 39 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
 ;
 #X obj 38 16 inlet;
 #X obj 114 29 loadbang;
 #X obj 114 71 del 1000;
 #X msg 62 114 dimen 1000 400 \, title Bannieres \, create \, 1;
 #X msg 74 213 dimen 1000 100 \, title Compteur \, create \, 1;
-#X msg 193 262 color 0 0 1 1;
+#X msg 189 287 color 0 0 1 1;
 #X obj 62 141 gemwin 20 banniere;
 #X obj 62 290 gemwin 20 compteur;
 #X obj 62 260 t a;
+#X msg 197 148 color 0 0 1 1;
 #X connect 0 0 9 0;
 #X connect 0 0 11 0;
 #X connect 1 0 0 0;
@@ -372,10 +383,11 @@
 #X connect 6 0 9 0;
 #X connect 7 0 11 0;
 #X connect 8 0 11 0;
+#X connect 12 0 9 0;
 #X restore 8 85 pd gemwin;
-#X obj 8 67 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
+#X obj 8 67 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
 ;
-#N canvas 701 480 758 599 banniere 0;
+#N canvas 699 480 758 599 banniere 0;
 #X obj 197 18 loadbang;
 #X obj 94 18 gemhead banniere;
 #X obj 94 38 t a a;
@@ -971,8 +983,8 @@ RGB \, type BYTE;
 RGB \, type BYTE;
 #X msg 403 96 color 1 0 0 1;
 #X obj 94 290 rectangle 40 4;
-#X obj 300 164 videolayer compteur;
 #X obj 300 185 textlayer compteur;
+#X obj 300 164 videolayer compteur;
 #X connect 0 0 14 0;
 #X connect 1 0 7 0;
 #X connect 1 1 3 0;
