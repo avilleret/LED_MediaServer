@@ -6,10 +6,9 @@ import com.heroicrobot.dropbit.devices.pixelpusher.Strip;
 import java.util.*;
 
 import oscP5.*;
+import processing.core.*;
 
-//import com.illposed.osc.*;
-
-public class PixelPusher_server {
+public class PixelPusher_server extends PApplet {
 	class PPObserver implements Observer {
 		public boolean hasStrips = false;
 
@@ -153,7 +152,8 @@ public class PixelPusher_server {
 			for (Strip strip : strips) {
 				for (int i = 0; i < strip.getLength()
 						&& (a + 3 < blob.length / 3); i++) {
-					c = 0xff000000 | ( blob[a] << 16) | ( blob[a + 1] << 8) | blob[a + 2];
+					// c = 0xff000000 | ( blob[a] << 16) | ( blob[a + 1] << 8) | blob[a + 2];
+					c = color( blob[a], blob[a + 1], blob[a + 2]);
 					strip.setPixel(c, i);
 					a += 3;
 				}
@@ -171,7 +171,8 @@ public class PixelPusher_server {
 			Strip strip = strips.get(stripId);
 			int a = 0, c = 0;
 			for (int i = 0; i < strip.getLength(); i++) {
-				c = 0xff000000 | ( blob[a] << 16) | ( blob[a + 1] << 8) | blob[a + 2];
+				// c = 0xff000000 | ( blob[a] << 16) | ( blob[a + 1] << 8) | blob[a + 2];
+				c = color( blob[a], blob[a + 1], blob[a + 2]);
 				strip.setPixel(c, pixelMap[i]);
 				a += 3;
 			}
@@ -186,10 +187,11 @@ public class PixelPusher_server {
 		r = blob[0] & 0xFF;
 		g = blob[1];
 		b = blob[2];
-
+		
 		System.out.println("### set all LED to : " + r + " " + g + " " + b);
-		int a = 0, c = 0;
-		c = 0xff000000 | ( blob[a] << 16) | ( blob[a + 1] << 8) | blob[a + 2];
+		int a = 0;
+		int c;
+		c = color( blob[a], blob[a + 1], blob[a + 2]);
 		if (ppObserver.hasStrips) {
 			registry.startPushing();
 			System.out.println("push pixel");
