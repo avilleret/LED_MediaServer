@@ -3,23 +3,20 @@ import com.heroicrobot.dropbit.devices.pixelpusher.PixelPusher;
 import com.heroicrobot.dropbit.devices.pixelpusher.PusherCommand;
 import com.heroicrobot.dropbit.devices.pixelpusher.Strip;
 
-import java.net.SocketException;
 import java.util.*;
-
-import processing.core.*;
 
 import oscP5.*;
 
 //import com.illposed.osc.*;
 
-public class PixelPusher_server extends PApplet {
+public class PixelPusher_server {
 	class PPObserver implements Observer {
 		public boolean hasStrips = false;
 
 		public void update(Observable registry, Object updatedDevice) {
-			println("Registry changed!");
+			System.out.println("Registry changed!");
 			if (updatedDevice != null) {
-				println("Device change: " + updatedDevice);
+				System.out.println("Device change: " + updatedDevice);
 			}
 			this.hasStrips = true;
 		}
@@ -68,14 +65,14 @@ public class PixelPusher_server extends PApplet {
 		ppObserver = new PPObserver();
 
 		registry.addObserver(ppObserver);
-		registry.useOverallBrightnessScale = true;
+		// registry.useOverallBrightnessScale = true;
 		registry.setAntiLog(true); // set anti-log level rule for pixels
 
 		oscP5 = new OscP5(this, 10001);
 		oscP5.plug(this, "pushBundle", "/pp");
 		oscP5.plug(this, "pushStrip", "/s");
 		oscP5.plug(this, "setAll", "/all");
-		oscP5.plug(this, "setBrightnessScale", "/brightnessScale", "f");
+		// oscP5.plug(this, "setBrightnessScale", "/brightnessScale", "f");
 		oscP5.plug(this, "setBrightness", "/brightness", "i");
 
 		/*
@@ -116,23 +113,22 @@ public class PixelPusher_server extends PApplet {
 
 	int current_pixel = 0;
 
-	public void draw() {
-	}
-
 	void oscEvent(OscMessage message) {
 		// check if theOscMessage has the address pattern we are looking for.
 		if (!message.isPlugged())
-			println("### received an osc message. with address pattern "
+			System.out.println("### received an osc message. with address pattern "
 					+ message.addrPattern());
 	}
 
+	/*
 	void setBrightnessScale(float brightnessScale) {
-		println("setOverallBrightnessScale to " + brightnessScale);
+		System.out.println("setOverallBrightnessScale to " + brightnessScale);
 		registry.setOverallBrightnessScale(brightnessScale);
 	}
+	*/
 
 	void setBrightness(int brightness) {
-		println("sendCommand : " + (short) brightness);
+		System.out.println("sendCommand : " + (short) brightness);
 		List<PixelPusher> pusherList = registry.getPushers();
 		for (PixelPusher pusher : pusherList) {
 			List<Strip> strips = pusher.getStrips();
@@ -146,7 +142,7 @@ public class PixelPusher_server extends PApplet {
 	}
 
 	void pushBundle(byte[] blob) {
-		println("### received an osc message /pp with " + blob.length
+		System.out.println("### received an osc message /pp with " + blob.length
 				+ " values");
 
 		if (ppObserver.hasStrips) {
@@ -157,8 +153,7 @@ public class PixelPusher_server extends PApplet {
 			for (Strip strip : strips) {
 				for (int i = 0; i < strip.getLength()
 						&& (a + 3 < blob.length / 3); i++) {
-					int c = color(blob[a] & 0xFF, blob[a + 1] & 0xFF,
-							blob[a + 2] & 0xFF);
+					int c = ( blob[a] & 0xFF ) << 16 + ( blob[a + 1] & 0xFF ) << 8 + ( blob[a + 2] & 0xFF );
 					strip.setPixel(c, i);
 					a += 3;
 				}
@@ -169,158 +164,18 @@ public class PixelPusher_server extends PApplet {
 	}
 
 	void pushStrip(int stripId, byte[] blob) {
+		System.out.println("### received an osc blob for strip " + stripId + " with " + blob.length + " values");
 		if (ppObserver.hasStrips) {
 			registry.startPushing();
 			List<Strip> strips = registry.getStrips();
 			Strip strip = strips.get(stripId);
-			int a = 0;
+			int a = 0, c = 0;
 			for (int i = 0; i < strip.getLength(); i++) {
-				int c = color(blob[a] & 0xFF, blob[a + 1] & 0xFF,
-						blob[a + 2] & 0xFF);
+				c = ( blob[a] & 0xFF ) << 16 + ( blob[a + 1] & 0xFF ) << 8 + ( blob[a + 2] & 0xFF );
 				strip.setPixel(c, pixelMap[i]);
 				a += 3;
 			}
 		}
-		return;
-	}
-
-	void pushStrip1(byte[] blob) {
-		println("### received an osc message /s1 with " + blob.length
-				+ " values");
-
-		if (ppObserver.hasStrips) {
-			registry.startPushing();
-			int a = 0;
-			List<Strip> strips = registry.getStrips();
-			Strip strip = strips.get(1);
-			for (int i = 0; i < strip.getLength(); i++) {
-				int c = color(blob[a] & 0xFF, blob[a + 1] & 0xFF,
-						blob[a + 2] & 0xFF);
-				strip.setPixel(c, i);
-				a += 3;
-			}
-		}
-
-		return;
-	}
-
-	void pushStrip2(byte[] blob) {
-		println("### received an osc message /s2 with " + blob.length
-				+ " values");
-
-		if (ppObserver.hasStrips) {
-			registry.startPushing();
-			int a = 0;
-			List<Strip> strips = registry.getStrips();
-			Strip strip = strips.get(2);
-			for (int i = 0; i < strip.getLength(); i++) {
-				int c = color(blob[a] & 0xFF, blob[a + 1] & 0xFF,
-						blob[a + 2] & 0xFF);
-				strip.setPixel(c, i);
-				a += 3;
-			}
-		}
-
-		return;
-	}
-
-	void pushStrip3(byte[] blob) {
-		println("### received an osc message /s3 with " + blob.length
-				+ " values");
-
-		if (ppObserver.hasStrips) {
-			registry.startPushing();
-			int a = 0;
-			List<Strip> strips = registry.getStrips();
-			Strip strip = strips.get(3);
-			for (int i = 0; i < strip.getLength(); i++) {
-				int c = color(blob[a] & 0xFF, blob[a + 1] & 0xFF,
-						blob[a + 2] & 0xFF);
-				strip.setPixel(c, i);
-				a += 3;
-			}
-		}
-
-		return;
-	}
-
-	void pushStrip4(byte[] blob) {
-		println("### received an osc message /s4 with " + blob.length
-				+ " values");
-
-		if (ppObserver.hasStrips) {
-			registry.startPushing();
-			int a = 0;
-			List<Strip> strips = registry.getStrips();
-			Strip strip = strips.get(4);
-			for (int i = 0; i < strip.getLength(); i++) {
-				int c = color(blob[a] & 0xFF, blob[a + 1] & 0xFF,
-						blob[a + 2] & 0xFF);
-				strip.setPixel(c, i);
-				a += 3;
-			}
-		}
-
-		return;
-	}
-
-	void pushStrip5(byte[] blob) {
-		println("### received an osc message /s5 with " + blob.length
-				+ " values");
-
-		if (ppObserver.hasStrips) {
-			registry.startPushing();
-			int a = 0;
-			List<Strip> strips = registry.getStrips();
-			Strip strip = strips.get(5);
-			for (int i = 0; i < strip.getLength(); i++) {
-				int c = color(blob[a] & 0xFF, blob[a + 1] & 0xFF,
-						blob[a + 2] & 0xFF);
-				strip.setPixel(c, i);
-				a += 3;
-			}
-		}
-
-		return;
-	}
-
-	void pushStrip6(byte[] blob) {
-		println("### received an osc message /s6 with " + blob.length
-				+ " values");
-
-		if (ppObserver.hasStrips) {
-			registry.startPushing();
-			int a = 0;
-			List<Strip> strips = registry.getStrips();
-			Strip strip = strips.get(6);
-			for (int i = 0; i < strip.getLength(); i++) {
-				int c = color(blob[a] & 0xFF, blob[a + 1] & 0xFF,
-						blob[a + 2] & 0xFF);
-				strip.setPixel(c, i);
-				a += 3;
-			}
-		}
-
-		return;
-	}
-
-	void pushStrip7(byte[] blob) {
-		println("### received an osc message /s7 with " + blob.length
-				+ " values");
-
-		if (ppObserver.hasStrips) {
-			registry.startPushing();
-			int a = 0;
-			List<Strip> strips = registry.getStrips();
-			Strip strip = strips.get(7);
-			for (int i = 0; i < strip.getLength(); i++) {
-				int c = color(blob[a] & 0xFF, blob[a + 1] & 0xFF,
-						blob[a + 2] & 0xFF);
-				strip.setPixel(c, i);
-				a += 3;
-			}
-		}
-
 		return;
 	}
 
@@ -332,12 +187,12 @@ public class PixelPusher_server extends PApplet {
 		g = blob[1];
 		b = blob[2];
 
-		println("### set all LED to : " + r + " " + g + " " + b);
+		System.out.println("### set all LED to : " + r + " " + g + " " + b);
 		int a = 0;
-		int c = color(blob[a] & 0xFF, blob[a + 1] & 0xFF, blob[a + 2] & 0xFF);
+		int c = ( blob[a] & 0xFF ) << 16 + ( blob[a + 1] & 0xFF ) << 8 + ( blob[a + 2] & 0xFF );
 		if (ppObserver.hasStrips) {
 			registry.startPushing();
-			println("push pixel");
+			System.out.println("push pixel");
 
 			List<Strip> strips = registry.getStrips();
 
