@@ -1,4 +1,5 @@
 import com.heroicrobot.dropbit.registry.*;
+import com.heroicrobot.dropbit.devices.pixelpusher.Pixel;
 import com.heroicrobot.dropbit.devices.pixelpusher.PixelPusher;
 import com.heroicrobot.dropbit.devices.pixelpusher.PusherCommand;
 import com.heroicrobot.dropbit.devices.pixelpusher.Strip;
@@ -6,9 +7,8 @@ import com.heroicrobot.dropbit.devices.pixelpusher.Strip;
 import java.util.*;
 
 import oscP5.*;
-import processing.core.*;
 
-public class PixelPusher_server extends PApplet {
+public class PixelPusher_server {
 	class PPObserver implements Observer {
 		public boolean hasStrips = false;
 
@@ -146,15 +146,17 @@ public class PixelPusher_server extends PApplet {
 
 		if (ppObserver.hasStrips) {
 			registry.startPushing();
-			int a = 0, c = 0;
+			int a = 0;
+			Pixel px = new Pixel();
 			List<Strip> strips = registry.getStrips();
 
 			for (Strip strip : strips) {
 				for (int i = 0; i < strip.getLength()
 						&& (a + 3 < blob.length / 3); i++) {
-					// c = 0xff000000 | ( blob[a] << 16) | ( blob[a + 1] << 8) | blob[a + 2];
-					c = color( blob[a], blob[a + 1], blob[a + 2]);
-					strip.setPixel(c, i);
+					px.red =  blob[a];
+					px.green = blob[a+1];
+					px.blue  = blob[a+2];
+					strip.setPixel(px, i);
 					a += 3;
 				}
 			}
@@ -169,11 +171,13 @@ public class PixelPusher_server extends PApplet {
 			registry.startPushing();
 			List<Strip> strips = registry.getStrips();
 			Strip strip = strips.get(stripId);
-			int a = 0, c = 0;
+			int a = 0;
+			Pixel px = new Pixel();
 			for (int i = 0; i < strip.getLength(); i++) {
-				// c = 0xff000000 | ( blob[a] << 16) | ( blob[a + 1] << 8) | blob[a + 2];
-				c = color( blob[a], blob[a + 1], blob[a + 2]);
-				strip.setPixel(c, pixelMap[i]);
+				px.red =  blob[a];
+				px.green = blob[a+1];
+				px.blue  = blob[a+2];
+				strip.setPixel(px, pixelMap[i]);
 				a += 3;
 			}
 		}
@@ -190,8 +194,10 @@ public class PixelPusher_server extends PApplet {
 		
 		System.out.println("### set all LED to : " + r + " " + g + " " + b);
 		int a = 0;
-		int c;
-		c = color( blob[a], blob[a + 1], blob[a + 2]);
+		Pixel px = new Pixel();
+		px.red =  blob[a];
+		px.green = blob[a+1];
+		px.blue  = blob[a+2];
 		if (ppObserver.hasStrips) {
 			registry.startPushing();
 			System.out.println("push pixel");
@@ -200,7 +206,7 @@ public class PixelPusher_server extends PApplet {
 
 			for (Strip strip : strips) {
 				for (int i = 0; i < strip.getLength(); i++) {
-					strip.setPixel(c, i);
+					strip.setPixel(px, i);
 					a += 3;
 				}
 			}
