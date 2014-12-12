@@ -1,4 +1,4 @@
-#N canvas 1040 471 522 505 10;
+#N canvas 1036 503 653 557 10;
 #X obj 91 239 pix_info, f 20;
 #X obj 91 191 t b a;
 #X obj 91 296 t b a;
