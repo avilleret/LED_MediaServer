@@ -153,9 +153,9 @@ public class PixelPusher_server {
 			for (Strip strip : strips) {
 				for (int i = 0; i < strip.getLength()
 						&& (a + 3 < blob.length / 3); i++) {
-					px.red =  blob[a];
-					px.green = blob[a+1];
-					px.blue  = blob[a+2];
+					px.red =  (byte) (blob[a] & 0xFF);
+					px.green = (byte) (blob[a+1] & 0xFF);
+					px.blue  = (byte) (blob[a+2] & 0xFF);
 					strip.setPixel(px, i);
 					a += 3;
 				}
@@ -174,9 +174,9 @@ public class PixelPusher_server {
 			int a = 0;
 			Pixel px = new Pixel();
 			for (int i = 0; i < strip.getLength(); i++) {
-				px.red =  blob[a];
-				px.green = blob[a+1];
-				px.blue  = blob[a+2];
+				px.red =  (byte) (blob[a] & 0xFF);
+				px.green = (byte) (blob[a+1] & 0xFF);
+				px.blue  = (byte) (blob[a+2] & 0xFF);
 				strip.setPixel(px, pixelMap[i]);
 				a += 3;
 			}
@@ -185,19 +185,13 @@ public class PixelPusher_server {
 	}
 
 	void setAll(byte[] blob) {
-		int r, g, b;
 		if (blob.length < 3)
 			return;
-		r = blob[0] & 0xFF;
-		g = blob[1];
-		b = blob[2];
 		
-		System.out.println("### set all LED to : " + r + " " + g + " " + b);
-		int a = 0;
 		Pixel px = new Pixel();
-		px.red =  blob[a];
-		px.green = blob[a+1];
-		px.blue  = blob[a+2];
+		px.red =  (byte) (blob[0] & 0xFF);
+		px.green = (byte) (blob[1] & 0xFF);
+		px.blue  = (byte) (blob[2] & 0xFF);
 		if (ppObserver.hasStrips) {
 			registry.startPushing();
 			System.out.println("push pixel");
@@ -207,7 +201,6 @@ public class PixelPusher_server {
 			for (Strip strip : strips) {
 				for (int i = 0; i < strip.getLength(); i++) {
 					strip.setPixel(px, i);
-					a += 3;
 				}
 			}
 		}
