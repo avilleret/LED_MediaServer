@@ -136,7 +136,9 @@ public class PixelPusher_server {
 				PusherCommand pc = new PusherCommand(
 						PusherCommand.STRIPBRIGHTNESS_SET, i,
 						(short) brightness);
-				pusher.sendCommand(pc);
+				for ( int j = 0; j<5 ; j++){
+					pusher.sendCommand(pc);	
+				}
 			}
 		}
 	}
