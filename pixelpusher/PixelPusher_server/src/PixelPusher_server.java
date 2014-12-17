@@ -170,7 +170,7 @@ public class PixelPusher_server {
 		System.out.println("### received an osc blob for strip " + stripId + " with " + blob.length + " values");
 		if (ppObserver.hasStrips) {
 			registry.startPushing();
-			List<Strip> strips = registry.getStrips();
+			List<Strip> strips = registry.getStrips(1);
 			Strip strip = strips.get(stripId);
 			int a = 0;
 			Pixel px = new Pixel();
