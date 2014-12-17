@@ -70,6 +70,7 @@ public class PixelPusher_server {
 		oscP5 = new OscP5(this, 10001);
 		oscP5.plug(this, "pushBundle", "/pp");
 		oscP5.plug(this, "pushStrip", "/s");
+		oscP5.plug(this, "pushRpi", "/r"); // push strip to Raspberry Pi pixel-push
 		oscP5.plug(this, "setAll", "/all");
 		// oscP5.plug(this, "setBrightnessScale", "/brightnessScale", "f");
 		oscP5.plug(this, "setBrightness", "/brightness", "i");
@@ -183,7 +184,29 @@ public class PixelPusher_server {
 		}
 		return;
 	}
-
+	
+	void pushRpi(int stripId, byte[] blob) {
+		// System.out.println("### received an osc blob for RPi " + stripId + " with " + blob.length + " values");
+		if (ppObserver.hasStrips) {
+			registry.startPushing();
+			List<Strip> strips = registry.getStrips(0);
+			Strip strip = strips.get(stripId);
+			int a = 0;
+			Pixel px = new Pixel();			
+			for (int i = 0; i < strip.getLength() && a < blob.length; i++) {
+				px.red =  (byte) (blob[a] & 0xFF);
+				px.green = (byte) (blob[a+1] & 0xFF);
+				px.blue  = (byte) (blob[a+2] & 0xFF);
+				strip.setPixel(px, i);
+				a += 3;
+			}
+			
+		} else {
+			System.out.println("oups registry doesn't have any strips !");
+		}
+		return;
+	}
+	
 	void setAll(byte[] blob) {
 		if (blob.length < 3)
 			return;
