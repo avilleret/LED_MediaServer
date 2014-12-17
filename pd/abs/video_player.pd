@@ -1,4 +1,4 @@
-#N canvas 537 200 1139 879 10;
+#N canvas 531 200 1139 879 10;
 #X declare -path ../osc;
 #X declare -path ../osc;
 #X declare -path ../osc;
@@ -32,7 +32,7 @@
 #X obj 46 249 pix_info, f 13;
 #X obj 79 270 > 0;
 #X obj 101 221 spigot;
-#X obj 271 285 tgl 15 0 empty empty loop 17 7 0 10 -262144 -1 -1 1
+#X obj 271 285 tgl 15 0 empty empty loop 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 199 57 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
@@ -367,6 +367,8 @@ f 5;
 #X floatatom 178 708 5 0 0 0 - - -, f 5;
 #X floatatom 61 707 5 0 0 0 - - -, f 5;
 #X floatatom 229 793 5 0 0 0 - - -, f 5;
+#X obj 139 257 loadbang;
+#X msg 139 278 quality 0;
 #X connect 0 0 11 0;
 #X connect 0 2 13 0;
 #X connect 1 0 21 0;
@@ -496,4 +498,6 @@ f 5;
 #X connect 137 1 142 0;
 #X connect 138 0 25 1;
 #X connect 139 0 137 0;
+#X connect 143 0 144 0;
+#X connect 144 0 1 0;
 #X coords 0 -1 1 1 85 430 1 260 230;
