@@ -1,4 +1,4 @@
-#N canvas 1197 331 405 177 10;
+#N canvas 1195 347 405 177 10;
 #X declare -path ../osc;
 #X declare -path ../osc;
 #X declare -path ../osc;
@@ -815,7 +815,7 @@ RGB \, type BYTE;
 #X connect 14 0 15 0;
 #X connect 14 0 16 0;
 #X restore 8 44 pd init;
-#N canvas 869 419 990 574 compteur 1;
+#N canvas 867 435 990 574 compteur 0;
 #X obj 197 18 loadbang;
 #X obj 94 38 t a a;
 #X obj 121 120 translateXYZ 0 0 -4;
@@ -833,7 +833,7 @@ RGB \, type BYTE;
 #X obj 801 65 f;
 #X obj 826 65 + 1;
 #X obj 881 511 s from_i-score;
-#X obj 801 12 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 801 12 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 801 45 metro 1000;
 #X obj 801 125 t f f f f f;
