@@ -169,7 +169,7 @@ public class PixelPusher_server {
 	}
 
 	void pushStrip(int stripId, byte[] blob) {
-		System.out.println("### received an osc blob for strip " + stripId + " with " + blob.length + " values");
+		// System.out.println("### received an osc blob for strip " + stripId + " with " + blob.length + " values");
 		if (ppObserver.hasStrips) {
 			registry.startPushing();
 			List<Strip> strips = registry.getStrips(1);
@@ -217,6 +217,8 @@ public class PixelPusher_server {
 		px.red =  (byte) (blob[0] & 0xFF);
 		px.green = (byte) (blob[1] & 0xFF);
 		px.blue  = (byte) (blob[2] & 0xFF);
+		
+		System.out.println("pixel : " + (byte) (blob[0] & 0xFF) +" "+px.green+" "+px.blue);
 		if (ppObserver.hasStrips) {
 			registry.startPushing();
 			System.out.println("push pixel");
