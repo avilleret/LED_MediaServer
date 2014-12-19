@@ -1,4 +1,4 @@
-#N canvas 922 690 981 389 10;
+#N canvas 918 690 981 389 10;
 #X declare -path ../osc;
 #X declare -path ../osc;
 #X declare -path ../osc;
