@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rpt="http://openoffice.org/2005/report" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.text">
- <office:meta><meta:creation-date>2014-12-10T15:04:18.708523640</meta:creation-date><dc:date>2014-12-12T13:10:39.841523630</dc:date><meta:editing-duration>PT23H27M40S</meta:editing-duration><meta:editing-cycles>36</meta:editing-cycles><meta:generator>LibreOffice/4.3.3.2$Linux_X86_64 LibreOffice_project/430m0$Build-2</meta:generator><dc:creator>antoine </dc:creator><meta:document-statistic meta:table-count="0" meta:image-count="6" meta:object-count="0" meta:page-count="8" meta:paragraph-count="36" meta:word-count="543" meta:character-count="3256" meta:non-whitespace-character-count="2747"/></office:meta>
+ <office:meta><meta:creation-date>2014-12-10T15:04:18.708523640</meta:creation-date><dc:date>2014-12-18T15:29:04.955679629</dc:date><meta:editing-duration>PT23H29M47S</meta:editing-duration><meta:editing-cycles>39</meta:editing-cycles><meta:generator>LibreOffice/4.3.3.2$Linux_X86_64 LibreOffice_project/430m0$Build-2</meta:generator><dc:creator>antoine </dc:creator><meta:document-statistic meta:table-count="0" meta:image-count="6" meta:object-count="0" meta:page-count="7" meta:paragraph-count="36" meta:word-count="543" meta:character-count="3248" meta:non-whitespace-character-count="2739"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
-   <config:config-item config:name="ViewAreaTop" config:type="long">6546</config:config-item>
+   <config:config-item config:name="ViewAreaTop" config:type="long">100690</config:config-item>
    <config:config-item config:name="ViewAreaLeft" config:type="long">0</config:config-item>
    <config:config-item config:name="ViewAreaWidth" config:type="long">45221</config:config-item>
-   <config:config-item config:name="ViewAreaHeight" config:type="long">20470</config:config-item>
+   <config:config-item config:name="ViewAreaHeight" config:type="long">20472</config:config-item>
    <config:config-item config:name="ShowRedlineChanges" config:type="boolean">true</config:config-item>
    <config:config-item config:name="InBrowseMode" config:type="boolean">false</config:config-item>
    <config:config-item-map-indexed config:name="Views">
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
-     <config:config-item config:name="ViewLeft" config:type="long">39407</config:config-item>
-     <config:config-item config:name="ViewTop" config:type="long">8909</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">5285</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">111065</config:config-item>
      <config:config-item config:name="VisibleLeft" config:type="long">0</config:config-item>
-     <config:config-item config:name="VisibleTop" config:type="long">6546</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="long">100690</config:config-item>
      <config:config-item config:name="VisibleRight" config:type="long">45219</config:config-item>
-     <config:config-item config:name="VisibleBottom" config:type="long">27014</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">121160</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
      <config:config-item config:name="ViewLayoutColumns" config:type="short">0</config:config-item>
      <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
@@ -81,7 +81,7 @@
    <config:config-item config:name="ConsiderTextWrapOnObjPos" config:type="boolean">false</config:config-item>
    <config:config-item config:name="CurrentDatabaseCommandType" config:type="int">0</config:config-item>
    <config:config-item config:name="RedlineProtectionKey" config:type="base64Binary"/>
-   <config:config-item config:name="Rsid" config:type="int">1755872</config:config-item>
+   <config:config-item config:name="Rsid" config:type="int">1882774</config:config-item>
    <config:config-item config:name="PrintProspectRTL" config:type="boolean">false</config:config-item>
    <config:config-item config:name="PrinterSetup" config:type="base64Binary"/>
    <config:config-item config:name="AlignTabStopPosition" config:type="boolean">true</config:config-item>
@@ -261,10 +261,10 @@
    <style:text-properties officeooo:rsid="00140d37" officeooo:paragraph-rsid="001a1d6a"/>
   </style:style>
   <style:style style:name="P6" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="001a1d6a" officeooo:paragraph-rsid="001a1d6a"/>
+   <style:text-properties officeooo:rsid="001acae0" officeooo:paragraph-rsid="001acae0"/>
   </style:style>
   <style:style style:name="P7" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="001acae0" officeooo:paragraph-rsid="001acae0"/>
+   <style:text-properties fo:font-style="normal" officeooo:rsid="001acae0" officeooo:paragraph-rsid="001acae0" style:font-style-asian="normal" style:font-style-complex="normal"/>
   </style:style>
   <style:style style:name="T1" style:family="text">
    <style:text-properties officeooo:rsid="001a1d6a"/>
@@ -277,6 +277,9 @@
   </style:style>
   <style:style style:name="T4" style:family="text">
    <style:text-properties officeooo:rsid="001acae0"/>
+  </style:style>
+  <style:style style:name="T5" style:family="text">
+   <style:text-properties officeooo:rsid="001cba96"/>
   </style:style>
   <style:style style:name="fr1" style:family="graphic" style:parent-style-name="Frame">
    <style:graphic-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0cm" style:wrap="dynamic" style:number-wrapped-paragraphs="no-limit" style:vertical-pos="from-top" style:vertical-rel="paragraph" style:horizontal-pos="from-left" style:horizontal-rel="paragraph" fo:padding="0cm" fo:border="none"/>
@@ -315,31 +318,28 @@
    <text:h text:style-name="Heading_20_1" text:outline-level="1">Ubuntu tips</text:h>
    <text:p text:style-name="P5">login : halory <text:line-break/>mot de passe : halory</text:p>
    <text:p text:style-name="P4">En bas à droite de l&apos;écran, il y a une ligne de 4 cases qui permettent de sélectionner l&apos;espace de travail (le bureau, ce qui s&apos;appelle <text:span text:style-name="T2">Space</text:span><text:span text:style-name="T3"> sous OSX). Dans chaque case apparaît le canevas des feneêtres qui s&apos;y trouvent avec parfois une icône de l&apos;application. On peut déplacer les fenêtres entre les espaces de travail en faisant un </text:span><text:span text:style-name="T2">drag and drop</text:span><text:span text:style-name="T3"> du canevas sur un autre espace de travail. On peut également faire un clic droit de la barre de titre d&apos;une fenêtre pour la déplacer sur un autre espace de travail et pour gérer son mode d&apos;affichage (seulement sur l&apos;espace de travail courant, sur tous). L&apos;option </text:span><text:span text:style-name="T2">au premier plan</text:span><text:span text:style-name="T3"> permet de garder une fnêtre au dessus de toutes les autres (pratique pour la <text:s/>fenêtre de rendu de Pd).</text:span></text:p>
-   <text:p text:style-name="P7"><text:span text:style-name="T3">Pour passer d&apos;un espace de travail à celui d&apos;à côté : Ctrl + Alt + Droite ou Gauche.</text:span></text:p>
+   <text:p text:style-name="P7">Pour passer d&apos;un espace de travail à celui d&apos;à côté : Ctrl + Alt + Droite ou Gauche.</text:p>
    <text:h text:style-name="Heading_20_1" text:outline-level="1">Lancement des logiciels de régie</text:h>
-   <text:p text:style-name="P1">Au démarrage, le Macmini boot sous Ubuntu, et 3 logiciels se lancent dans l&apos;ordre : i-score, eclipse et PureData (aka pd)</text:p>
+   <text:p text:style-name="P1">Au démarrage, le Macmini boot sous Ubuntu, et 3 logiciels se lancent dans l&apos;ordre : i-score, <text:span text:style-name="T5">Java</text:span> et PureData (aka pd)</text:p>
    <text:p text:style-name="P1">I-score permet de piloter pd. Pd charge les medias, les transforment et les envoie au PixelPusher_server qui se charge de les formater et de les envoyer aux bannières.</text:p>
    <text:p text:style-name="P1">Une fois que tous les logiciels osnt lancés. Il est pratique de déplacer les fenètres vers des espaces de travail différents.</text:p>
    <text:h text:style-name="Heading_20_1" text:outline-level="1">Initialisation</text:h>
-   <text:p text:style-name="P2">Dans Eclipse, lancer le PixelPusher.</text:p>
    <text:p text:style-name="P2">Dans I-score, ouvrir le score.</text:p>
    <text:p text:style-name="P2">Dans PureData, reconnecter le patch en cliquant sur le bang dans le patch principal.</text:p>
    <text:h text:style-name="Heading_20_1" text:outline-level="1">Utilisation</text:h>
    <text:h text:style-name="Heading_20_2" text:outline-level="2">I-score</text:h>
    <text:p text:style-name="P3">Créer une boite : Ctrl + clic &amp; drag</text:p>
    <text:p text:style-name="P3">Assigner les valeurs au début d&apos;une boite : sélectionner la boite, puis cliquer sur la checkbox « v » du paramètre que l&apos;on souhaite enregistrer.</text:p>
-   <text:p text:style-name="P3"><text:soft-page-break/>Renommer une boite : sélectionner la boite puis double cliquer sur le texte en haut à gauche de l&apos;interface d&apos;i-score.</text:p>
-   <text:h text:style-name="Heading_20_1" text:outline-level="1">Eclipse</text:h>
-   <text:p text:style-name="P4">Une fois l&apos;applet lancée, il n&apos;y a rien à faire.</text:p>
+   <text:p text:style-name="P3">Renommer une boite : sélectionner la boite puis double cliquer sur le texte en haut à gauche de <text:soft-page-break/>l&apos;interface d&apos;i-score.</text:p>
    <text:h text:style-name="Heading_20_1" text:outline-level="1">Puredata</text:h>
    <text:p text:style-name="P4">Le patch permet de charger des images fixes, des vidéos et d&apos;afficher du texte sur les bannières et sur le journal lumineux.</text:p>
-   <text:p text:style-name="P7">Le patch se trouve à cet emplacement ~/CorpsDiplomatique/pd/LED_MediaServer.pd</text:p>
+   <text:p text:style-name="P6">Le patch se trouve à cet emplacement ~/CorpsDiplomatique/pd/LED_MediaServer.pd</text:p>
    <text:h text:style-name="Heading_20_1" text:outline-level="1">Workflow</text:h>
    <text:h text:style-name="Heading_20_1" text:outline-level="1">Conversion des vidéos pour être lues dans Pd</text:h>
    <text:p text:style-name="P4">Pour une vidéo qui existe déjà dans le rapport d&apos;affichage voulu (1:2 pour une bannière, 3:2 pour 3 bannière, 5:2 pour 5 bannières, 5:1 pour le compteur), VLC suffit.</text:p>
    <text:p text:style-name="P4">Sélectionner Fichier → Convertir / Enregistrer, puis ajouter les médias que l&apos;on souhaite convertir et cliquer sur Convertir / Enregistrer.</text:p>
    <text:p text:style-name="P4">Dans la fenêtre suivante, choisir Convertir dans les paramètres puis créer un nouveau profil de convertion.</text:p>
-   <text:p text:style-name="P7">Les screenshots sont faits avec la version 2.2.0 de VLC.</text:p>
+   <text:p text:style-name="P6">Les screenshots sont faits avec la version 2.2.0 de VLC.</text:p>
    <text:p text:style-name="P4"><draw:frame draw:style-name="fr1" draw:name="Frame1" text:anchor-type="paragraph" svg:x="0.677cm" svg:y="0.041cm" svg:width="15.663cm" draw:z-index="0">
      <draw:text-box fo:min-height="13.256cm">
       <text:p text:style-name="Convertion"><draw:frame draw:style-name="fr4" draw:name="Image1" text:anchor-type="paragraph" svg:width="15.663cm" svg:height="13.256cm" style:rel-height="scale" draw:z-index="1"><draw:image>
@@ -1156,7 +1156,7 @@
         </draw:image>
        </draw:frame>Convertion <text:sequence text:ref-name="refConvertion0" text:name="Convertion" text:formula="ooow:Convertion+1" style:num-format="1">1</text:sequence>: Dans la fenêtre suivante, choisir Convertir dans les paramètres puis créer un nouveau profil de convertion.</text:p>
      </draw:text-box>
-    </draw:frame><text:soft-page-break/></text:p>
+    </draw:frame></text:p>
    <text:p text:style-name="P4"><draw:frame draw:style-name="fr2" draw:name="Frame2" text:anchor-type="paragraph" svg:width="15.505cm" draw:z-index="2">
      <draw:text-box fo:min-height="13.203cm">
       <text:p text:style-name="Convertion"><draw:frame draw:style-name="fr4" draw:name="Image2" text:anchor-type="paragraph" svg:width="15.505cm" svg:height="13.203cm" style:rel-height="scale" draw:z-index="3"><draw:image>
@@ -5802,7 +5802,9 @@
      </draw:text-box>
     </draw:frame><text:soft-page-break/></text:p>
    <text:p text:style-name="P4"/>
-   <text:p text:style-name="P4"/>
+   <text:h text:style-name="Heading_20_1" text:outline-level="1">Command<text:span text:style-name="T5">e</text:span> du MediaServer en Midi / OSC</text:h>
+   <text:h text:style-name="Heading_20_2" text:outline-level="2">Affichage de video / image fixe</text:h>
+   <text:h text:style-name="Heading_20_2" text:outline-level="2">Affich<text:span text:style-name="T5">a</text:span>ge de texte</text:h>
   </office:text>
  </office:body>
 </office:document>
