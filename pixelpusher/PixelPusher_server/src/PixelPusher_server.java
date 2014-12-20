@@ -129,17 +129,12 @@ public class PixelPusher_server {
 
 	void setBrightness(int brightness) {
 		System.out.println("sendCommand : " + (short) brightness);
-		List<PixelPusher> pusherList = registry.getPushers();
+		List<PixelPusher> pusherList = registry.getPushers(1); // group 1 is banniere, group 0 is RPi
 		for (PixelPusher pusher : pusherList) {
-			List<Strip> strips = pusher.getStrips();
-			for (byte i = 0; i < strips.size(); i++) {
-				PusherCommand pc = new PusherCommand(
-						PusherCommand.STRIPBRIGHTNESS_SET, i,
-						(short) brightness);
+				PusherCommand pc = new PusherCommand(PusherCommand.GLOBALBRIGHTNESS_SET, (short) brightness);
 				for ( int j = 0; j<5 ; j++){
 					pusher.sendCommand(pc);	
 				}
-			}
 		}
 	}
 
