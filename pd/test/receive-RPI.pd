@@ -1,0 +1,186 @@
+#N canvas 931 237 704 623 10;
+#X text 452 8 GEM object;
+#X obj 9 272 cnv 15 430 340 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X text 40 274 Inlets:;
+#X text 39 487 Outlets:;
+#X obj 9 239 cnv 15 430 30 empty empty empty 20 12 0 14 -195568 -66577
+0;
+#X text 18 238 Arguments:;
+#X obj 8 56 cnv 15 430 180 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 449 57 cnv 15 250 450 empty empty empty 20 12 0 14 -228992 -66577
+0;
+#X text 453 40 Example:;
+#X obj 594 440 cnv 15 100 60 empty empty empty 20 12 0 14 -195568 -66577
+0;
+#N canvas 1 112 450 300 gemwin 0;
+#X obj 67 89 outlet;
+#X obj 67 10 inlet;
+#X msg 67 70 set destroy;
+#X msg 132 112 create \, 1;
+#X msg 198 112 destroy;
+#X msg 156 71 set create;
+#X obj 67 41 route create;
+#X obj 132 136 gemwin 60;
+#X connect 1 0 6 0;
+#X connect 2 0 0 0;
+#X connect 3 0 7 0;
+#X connect 4 0 7 0;
+#X connect 5 0 0 0;
+#X connect 6 0 2 0;
+#X connect 6 0 3 0;
+#X connect 6 1 5 0;
+#X connect 6 1 4 0;
+#X restore 599 479 pd gemwin;
+#X msg 599 460 destroy;
+#X text 595 439 Create window:;
+#X obj 451 88 cnv 15 175 300 empty empty empty 20 12 0 14 -24198 -66577
+0;
+#X obj 451 63 gemhead;
+#X text 17 503 Outlet 1: gemlist;
+#X text 18 288 Inlet 1: gemlist;
+#X obj 451 410 pix_texture;
+#X obj 463 90 bng 25 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X text 505 57 open a supported;
+#X text 506 68 movie-clip;
+#X floatatom 466 342 5 0 0 3 length - -, f 5;
+#X floatatom 514 342 5 0 0 3 width - -, f 5;
+#X floatatom 565 342 5 0 0 3 height - -, f 5;
+#X obj 514 281 bng 15 250 50 0 empty empty end_reached 20 7 0 10 -262144
+-1 -1;
+#X floatatom 504 263 5 0 10000 1 frameNum - -, f 5;
+#X text 71 31 Class: pix object (pix source);
+#X text 29 57 Description: load in a movie-file;
+#X obj 463 117 openpanel;
+#X obj 451 432 rectangle 4 3;
+#X text 50 12 Synopsis: [pix_film];
+#X text 15 78 [pix_film] loads in a preproducecd digital-video to be
+used aas a texture \, bitblit or something else.;
+#X text 64 249 symbol: file to load initially;
+#X text 18 303 Inlet 1: message: open <filename> [RGBA|YUV|Grey]: opens
+the movie <filename> and decodes it into the specified color-space.
+;
+#X text 18 346 Inlet 1: message: colorspace "RGBA|YUV|Grey": decodes
+the current film into the specified colorspace.;
+#X text 18 375 Inlet 1: message : auto 1|0 : starts/stops automatic
+playback.;
+#X text 16 455 Inlet 2: float: <frame#> changes the frame to be decoded
+on rendering.;
+#X text 17 576 Outlet 3: bang: indicates that the last frame has been
+reached. (or: an illegal frame would have been decoded);
+#X msg 469 174 auto \$1;
+#X obj 469 156 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
+1;
+#X msg 480 193 colorspace Grey;
+#X text 13 104 You can open a specified film via the "open" message
+\, which takes an optional argument for the colorspace \, to which
+the movie should be decoded (RGBA \, YUV or Grey).;
+#X text 17 520 Outlet 2: list: <length> <width> <height> <fps>: gets
+the dimensions (in frames and pixels) of a film when it gets loaded.
+if length is not available (video-streams) -1 is returned.;
+#X text 14 144 Normally \, you will only get one specified (via the
+second inlet) frame of the film \, To play back a complete film \,
+you have to change the frame accordingly \, OR use the "auto" message
+\, to automatically proceed to the next frame each rendering-cycle.
+In auto-mode \, the film is NOT looped. Instead you can reset the current-frame
+to zero when the end of the film is reached.;
+#N canvas 16 96 928 614 :: 0;
+#X text 24 16 the format [pix_film] is able to decode depends on the
+system you are running Gem.;
+#X text 33 52 basically Gem's decoding capabailities are handled by
+plugins. You should see \, which plugins are loaded \, when instantiating
+the first [pix_film] object: a line "[pix_film]: foo support" means
+\, that the 'foo' plugin has been loaded.;
+#X text 453 50 you can add a plugin to your system by simply copying
+the plugin-binary called "gem_filmNAME.dll" (or gem_filmNAME.so if
+you are on a unix-like system) into your Gem-directory (where you find
+the Gem-binary \, e.g. Gem.dll);
+#X text 456 103 if you want to remove a plugin (e.g. because you are
+not satisfied with the decoding quality of because it is unstable)
+\, you can simply remove the corresponding gem_filmNAME.dll file from
+your Gem-directory.;
+#X text 35 123 which media can be decoded \, depends on the installed
+plugins and on the codecs you have installed on your system.;
+#X obj 45 248 cnv 15 200 15 empty empty empty 20 12 0 14 -203904 -66577
+0;
+#X obj 45 303 cnv 15 200 15 empty empty empty 20 12 0 14 -203904 -66577
+0;
+#X obj 445 248 cnv 15 200 15 empty empty empty 20 12 0 14 -203904 -66577
+0;
+#X text 449 249 Gmerlin (gem_filmGMERLIN);
+#X text 49 249 QuickTime (gem_filmQT);
+#X text 73 262 available on OS-X (PPC and i386 \, but not 64bit!) and
+W32;
+#X text 73 277 should be able to decode any QuickTime MOV \, and probably
+a lot more;
+#X text 49 304 DirectShow (gem_filmDS);
+#X text 73 317 available on W32;
+#X text 73 331 should be able to decode anything for which you have
+a DirectShow filter installed;
+#X text 50 365 AVI (gem_filmAVI);
+#X text 73 380 available on W32;
+#X text 73 394 this uses the old (pre-XP) W32-API for decoding movies.
+Support for newer codecs is probably limited;
+#X text 50 424 AVIPLAY (gem_filmAVIPLAY);
+#X text 73 439 available on linux;
+#X text 74 452 uses the meta-framework "avifile" to decode movies \,
+which itself has a plugin system to use ffmpeg \, vorbis \, w32-dlls
+\, ... to decode videos;
+#X text 73 507 available on linux;
+#X text 50 494 quicktime4linux (gem_filmQT4L);
+#X text 73 522 uses libquicktime/lqt for decoding;
+#X text 473 262 available on linux (probably also on OSX and W32);
+#X text 473 277 uses Gmerlin-avdecoder to decode lots of formats;
+#X text 449 304 MPEG3 (gem_filmMPEG3);
+#X text 473 317 available on linux;
+#X text 473 331 should be able to decode various MPEG-formats (e.g.
+MPEG-2-Video and MPEG-2-transportstreams);
+#X text 473 380 available on linux;
+#X text 473 394 uses an old \, buggy (and no longer developed) library
+to decode MPEG-streams;
+#X text 450 365 MPEG (gem_filmMPEG1);
+#X text 450 424 Darwin (gem_filmDarwin);
+#X text 473 439 available on OS-X;
+#X text 450 484 test (gem_TEST);
+#X text 473 497 available on ALL platforms;
+#X text 473 512 outputs test images rather than decoding real media
+files;
+#X text 270 194 available film decoding plugins;
+#X text 260 210 (recommended plugins are highlighed);
+#X text 474 452 an alternative implementation of the QuickTime plugin
+for OS-X only;
+#X restore 455 484 pd :: FORMATS;
+#X obj 473 305 unpack 0 0 0 0;
+#X floatatom 581 306 5 0 0 3 fps - -, f 5;
+#X obj 451 281 pix_film;
+#X text 17 401 Inlet 1: message : driver <name>: open the film using
+only the specified backend(s);
+#X msg 489 237 bang;
+#X text 17 428 Inlet 1: message : bang: (re)send the l/w/h/fps info
+to the 2nd outlet;
+#X msg 486 212 driver vlc;
+#X msg 463 136 open http://10.42.0.84:8090;
+#X msg 488 155 open udp://239.255.12.42:8090;
+#X connect 10 0 11 0;
+#X connect 11 0 10 0;
+#X connect 14 0 47 0;
+#X connect 17 0 29 0;
+#X connect 18 0 28 0;
+#X connect 25 0 47 1;
+#X connect 28 0 52 0;
+#X connect 38 0 47 0;
+#X connect 39 0 38 0;
+#X connect 40 0 47 0;
+#X connect 45 0 21 0;
+#X connect 45 1 22 0;
+#X connect 45 2 23 0;
+#X connect 45 3 46 0;
+#X connect 47 0 17 0;
+#X connect 47 1 45 0;
+#X connect 47 2 24 0;
+#X connect 49 0 47 0;
+#X connect 51 0 47 0;
+#X connect 52 0 47 0;
+#X connect 53 0 47 0;
