@@ -177,8 +177,19 @@ public class PixelPusher_server {
 		// System.out.println("### received an osc blob for strip " + stripId + " with " + blob.length + " values");
 		if (ppObserver.hasStrips) {
 			registry.startPushing();
-			List<Strip> strips = registry.getStrips(1);
-			Strip strip = strips.get(stripId);
+			// List<Strip> strips = registry.getStrips(1);
+			List<Strip> strips = null;
+			List<PixelPusher> group1 = registry.getPushers(1);
+			for ( PixelPusher pusher : group1 ){
+				if ( pusher.getControllerOrdinal() == stripId/8 ){
+					strips=pusher.getStrips();
+				}
+			}
+			if ( strips == null ) {
+				// System.err.println("La banniere " + stripId/8 + " n'est pas en ligne !");
+				return;
+			}
+			Strip strip = strips.get(stripId%8);
 			int a = 0;
 			Pixel px = new Pixel();
 			for (int i = 0; i < strip.getLength(); i++) {
