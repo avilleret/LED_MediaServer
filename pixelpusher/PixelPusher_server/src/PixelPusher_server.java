@@ -76,6 +76,7 @@ public class PixelPusher_server {
 		registry.addObserver(ppObserver);
 		// registry.useOverallBrightnessScale = true;
 		registry.setAntiLog(true); // set anti-log level rule for pixels
+		registry.setAutoThrottle(true);
 
 		oscP5 = new OscP5(this, 10001);
 		oscP5.plug(this, "pushBundle", "/pp");
