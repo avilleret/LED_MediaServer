@@ -83,7 +83,6 @@ public class PixelPusher_server {
 		oscP5.plug(this, "pushStrip", "/s");
 		oscP5.plug(this, "pushRpi", "/r"); // push strip to Raspberry Pi pixel-push
 		oscP5.plug(this, "setAll", "/all");
-		// oscP5.plug(this, "setBrightnessScale", "/brightnessScale", "f");
 		oscP5.plug(this, "setBrightness", "/brightness", "i");
 
 		/*
@@ -122,7 +121,7 @@ public class PixelPusher_server {
 		 */
 	}
 
-	int current_pixel = 0;
+	// int current_pixel = 0;
 
 	void oscEvent(OscMessage message) {
 		// check if theOscMessage has the address pattern we are looking for.
