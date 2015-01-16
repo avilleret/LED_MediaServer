@@ -208,15 +208,17 @@ public class PixelPusher_server {
 		if (ppObserver.hasStrips) {
 			registry.startPushing();
 			List<Strip> strips = registry.getStrips(0);
-			Strip strip = strips.get(stripId);
-			int a = 0;
-			Pixel px = new Pixel();			
-			for (int i = 0; i < strip.getLength() && a < blob.length; i++) {
-				px.red =  (byte) (blob[a] & 0xFF);
-				px.green = (byte) (blob[a+1] & 0xFF);
-				px.blue  = (byte) (blob[a+2] & 0xFF);
-				strip.setPixel(px, i);
-				a += 3;
+			if ( !strips.isEmpty() ){
+				Strip strip = strips.get(stripId);
+				int a = 0;
+				Pixel px = new Pixel();			
+				for (int i = 0; i < strip.getLength() && a < blob.length; i++) {
+					px.red =  (byte) (blob[a] & 0xFF);
+					px.green = (byte) (blob[a+1] & 0xFF);
+					px.blue  = (byte) (blob[a+2] & 0xFF);
+					strip.setPixel(px, i);
+					a += 3;
+				}
 			}
 			
 		} else {
