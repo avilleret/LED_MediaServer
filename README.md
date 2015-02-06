@@ -9,3 +9,4 @@ A Pd patch does the media management and can be fully automated with i-score.
 A Processing sketch talk with PixelPusher boards.
 
 It was born from the *Corps Diplomatique* project by Halory Goerger.
+
