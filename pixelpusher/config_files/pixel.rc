@@ -1,5 +1,10 @@
+group=1
+controller=0
+
+ip=10.42.0.21
+
 stripsattached=8
-pixels=420
+pixels=480
 strip1=apa102
 strip2=apa102
 strip3=apa102
