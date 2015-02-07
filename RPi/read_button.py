@@ -1,4 +1,4 @@
-#!/usr/bin/python
++#!/usr/bin/python
 
 import time
 import RPi.GPIO as GPIO
@@ -18,28 +18,28 @@ GPIO.setup(pinRed,GPIO.IN)
 
 # setup OSC
 client = OSC.OSCClient()
-client.connect( ('10.42.0.1', 9002) )
-msgGreen = OSC.OSCMessage()
-msgGreen.setAddress("/green")
-msgGreen.append("b")
-msgRed = OSC.OSCMessage()
-msgRed.setAddress("/red")
-msgRed.append("b")
+client.connect( ('10.42.0.11', 9001) )
 
 while True:
         tmpGreen = GPIO.input(pinGreen)
         tmpRed = GPIO.input(pinRed)
 	if ( tmpGreen != btnGreen ):
 		btnGreen = tmpGreen
-                # print("Green %d " % btnGreen)
-                try:
-                        client.send(msgGreen)
-                except:
-                        print("can't connect to OSC")
-        if ( tmpRed != btnRed ):
+			print("Green %d " % btnGreen)
+            try:
+				msgGreen = OSC.OSCMessage()
+				msgGreen.setAddress("/green")
+				msgGreen.append(tmpGreen)
+                client.send(msgGreen)
+			except:
+				print("can't connect to OSC")
+	if ( tmpRed != btnRed ):
 		btnRed  = tmpRed
-                # print("Red %d" % btnRed)
-                try:
-                        client.send(msgRed)
-                except:
-                        print("can't connect to OSC")
+			print("Red %d" % btnRed)
+            try:
+				msgRed = OSC.OSCMessage()
+				msgRed.setAddress("/red")
+				msgRed.append(tmpRed)
+				client.send(msgRed)
+			except:
+				print("can't connect to OSC")
