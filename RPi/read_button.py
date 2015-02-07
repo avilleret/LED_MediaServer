@@ -25,21 +25,21 @@ while True:
         tmpRed = (GPIO.input(pinRed) == 0 )
 	if ( tmpGreen != btnGreen ):
 		btnGreen = tmpGreen
-		print("Green %d " % btnGreen)
+		# print("Green %d " % btnGreen)
         	try:
 			msgGreen = OSC.OSCMessage()
 			msgGreen.setAddress("/green")
-			msgGreen.append(tmpGreen)
+			msgGreen.append(str(tmpGreen))
                 	client.send(msgGreen)
 		except:
 			print("can't connect to OSC")
 	if ( tmpRed != btnRed ):
 		btnRed  = tmpRed
-		print("Red %d" % btnRed)
+		# print("Red %d" % btnRed)
        		try:
 			msgRed = OSC.OSCMessage()
 			msgRed.setAddress("/red")
-			msgRed.append(tmpRed)
+			msgRed.append(str(tmpRed))
 			client.send(msgRed)
 		except:
 			print("can't connect to OSC")
