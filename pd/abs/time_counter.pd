@@ -1,4 +1,5 @@
-#N canvas 23 325 1497 663 10;
+#N canvas 304 358 1497 663 10;
+#X declare -path ../zexy -lib zexy;
 #X obj 129 87 time -----;
 #X obj 50 86 date -----;
 #X obj 50 54 t b b;
@@ -322,6 +323,7 @@
 #X text 1071 180 increment peu precis pour ces vitesse la : impose
 une date a la fin;
 #X msg 1042 295 1002 15 311 12 34 28;
+#X obj 332 75 declare -path ../zexy -lib zexy;
 #X connect 0 0 3 0;
 #X connect 0 1 4 0;
 #X connect 0 2 5 0;
