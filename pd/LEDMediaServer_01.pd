@@ -1,4 +1,4 @@
-#N canvas 1175 173 405 177 10;
+#N canvas 13 485 418 263 10;
 #X declare -path ../osc;
 #X declare -path ../osc;
 #X declare -path ../osc;
@@ -873,6 +873,7 @@
 #X declare -path iemnet;
 #X declare -path hcs;
 #X declare -lib cream;
+#X declare -path ../zexy -lib zexy;
 #X declare -path ../osc;
 #X declare -path ../osc;
 #X declare -path ../osc;
@@ -1782,7 +1783,7 @@
 #X restore 8 85 pd gemwin;
 #X obj 8 67 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
 ;
-#N canvas 415 362 1088 594 banniere 0;
+#N canvas 409 377 1088 594 banniere 0;
 #X obj 197 18 loadbang;
 #X obj 94 18 gemhead banniere;
 #X obj 94 38 t a a;
@@ -1916,7 +1917,7 @@ RGB \, type BYTE;
 #X text 200 74 2014 - Antoine Villeret;
 #X obj 8 2 bng 15 250 50 0 empty empty reconnect 17 7 0 10 -262144
 -1 -1;
-#N canvas 36 409 440 509 PixelPusherOSC 0;
+#N canvas 34 414 440 509 PixelPusherOSC 0;
 #X obj 195 178 loadbang;
 #X obj 133 152 spigot;
 #X obj 152 277 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
@@ -2165,7 +2166,7 @@ RGB \, type BYTE;
 #X connect 27 0 26 0;
 #X connect 28 0 20 0;
 #X restore 92 22 pd PixelPusherOSC;
-#N canvas 289 486 596 375 init 1;
+#N canvas 285 496 596 375 init 0;
 #X obj 8 27 declare -path abs -path osc;
 #X obj 8 7 declare -path iemnet;
 #X obj 8 47 declare -path hcs;
@@ -2184,6 +2185,7 @@ RGB \, type BYTE;
 #X msg 331 209 vis 1;
 #X obj 342 264 s video-compteur;
 #X obj 331 284 s text-compteur;
+#X obj 7 69 declare -path ../zexy -lib zexy;
 #X connect 4 0 7 0;
 #X connect 6 0 9 0;
 #X connect 7 0 5 0;
@@ -2196,7 +2198,7 @@ RGB \, type BYTE;
 #X connect 14 0 15 0;
 #X connect 14 0 16 0;
 #X restore 8 44 pd init;
-#N canvas 278 444 990 574 compteur 0;
+#N canvas 831 85 1030 673 compteur 1;
 #X obj 197 18 loadbang;
 #X obj 94 38 t a a;
 #X obj 121 120 translateXYZ 0 0 -4;
@@ -2210,11 +2212,11 @@ RGB \, type BYTE;
 #X obj 221 72 s compteur-framebuffer;
 #X obj 148 165 s render_video_compteur;
 #X obj 121 185 s render_text_compteur;
-#N canvas 14 368 1265 631 compteur-de-temps 0;
+#N canvas 123 648 1529 706 compteur-de-temps 1;
 #X obj 801 65 f;
 #X obj 826 65 + 1;
 #X obj 881 511 s from_i-score;
-#X obj 801 12 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 801 12 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 801 45 metro 1000;
 #X obj 801 125 t f f f f f;
@@ -2266,7 +2268,7 @@ RGB \, type BYTE;
 #X restore 1071 430 pd 0padding;
 #X floatatom 788 420 5 0 0 0 - - -, f 5;
 #X floatatom 865 25 5 0 0 0 - - -, f 5;
-#N canvas 1 104 450 300 0padding 0;
+#N canvas 1 109 450 300 0padding 1;
 #X obj 119 20 inlet;
 #X obj 119 231 outlet;
 #X obj 119 104 t f f;
@@ -2336,6 +2338,7 @@ RGB \, type BYTE;
 #X msg 298 459 /compteur/text/2/text \$1\$2\$3;
 #X msg 488 459 /compteur/text/3/text \$2\$3;
 #X floatatom 647 114 80 0 0 0 - - -, f 80;
+#X obj 280 137 time_counter;
 #X connect 0 0 1 0;
 #X connect 0 0 5 0;
 #X connect 0 0 41 0;
