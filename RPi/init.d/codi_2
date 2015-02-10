@@ -83,7 +83,7 @@ do_stop()
 	# Many daemons don't delete their pidfiles when they exit.
 	# rm -f $PIDFILE
 	# return "$RETVAL"
-	killall raspivid
+	# killall raspivid
 	killall python
 }
 
