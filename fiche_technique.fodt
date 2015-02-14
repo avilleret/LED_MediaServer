@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rpt="http://openoffice.org/2005/report" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.text">
- <office:meta><meta:initial-creator>antoine </meta:initial-creator><meta:creation-date>2014-12-17T19:22:07.372133132</meta:creation-date><dc:date>2015-01-16T16:16:53.028454112</dc:date><dc:creator>antoine </dc:creator><meta:editing-duration>PT4H11M11S</meta:editing-duration><meta:editing-cycles>20</meta:editing-cycles><meta:generator>LibreOffice/4.3.3.2$Linux_X86_64 LibreOffice_project/430m0$Build-2</meta:generator><meta:document-statistic meta:table-count="1" meta:image-count="0" meta:object-count="0" meta:page-count="1" meta:paragraph-count="47" meta:word-count="250" meta:character-count="1517" meta:non-whitespace-character-count="1309"/></office:meta>
+ <office:meta><meta:initial-creator>antoine </meta:initial-creator><meta:creation-date>2014-12-17T19:22:07.372133132</meta:creation-date><dc:date>2015-02-14T10:55:33.969852827</dc:date><dc:creator>chnry </dc:creator><meta:editing-duration>PT4H11M11S</meta:editing-duration><meta:editing-cycles>21</meta:editing-cycles><meta:generator>LibreOffice/4.2.7.2$Linux_X86_64 LibreOffice_project/420m0$Build-2</meta:generator><meta:document-statistic meta:table-count="1" meta:image-count="0" meta:object-count="0" meta:page-count="1" meta:paragraph-count="48" meta:word-count="252" meta:character-count="1525" meta:non-whitespace-character-count="1316"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
-   <config:config-item config:name="ViewAreaTop" config:type="long">10202</config:config-item>
+   <config:config-item config:name="ViewAreaTop" config:type="long">0</config:config-item>
    <config:config-item config:name="ViewAreaLeft" config:type="long">0</config:config-item>
-   <config:config-item config:name="ViewAreaWidth" config:type="long">22107</config:config-item>
-   <config:config-item config:name="ViewAreaHeight" config:type="long">20447</config:config-item>
+   <config:config-item config:name="ViewAreaWidth" config:type="long">45223</config:config-item>
+   <config:config-item config:name="ViewAreaHeight" config:type="long">18450</config:config-item>
    <config:config-item config:name="ShowRedlineChanges" config:type="boolean">true</config:config-item>
    <config:config-item config:name="InBrowseMode" config:type="boolean">false</config:config-item>
    <config:config-item-map-indexed config:name="Views">
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
-     <config:config-item config:name="ViewLeft" config:type="long">5553</config:config-item>
-     <config:config-item config:name="ViewTop" config:type="long">26416</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">3817</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">10984</config:config-item>
      <config:config-item config:name="VisibleLeft" config:type="long">0</config:config-item>
-     <config:config-item config:name="VisibleTop" config:type="long">10202</config:config-item>
-     <config:config-item config:name="VisibleRight" config:type="long">22105</config:config-item>
-     <config:config-item config:name="VisibleBottom" config:type="long">30648</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="long">0</config:config-item>
+     <config:config-item config:name="VisibleRight" config:type="long">45221</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">18449</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
      <config:config-item config:name="ViewLayoutColumns" config:type="short">0</config:config-item>
      <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
@@ -81,7 +81,7 @@
    <config:config-item config:name="ConsiderTextWrapOnObjPos" config:type="boolean">false</config:config-item>
    <config:config-item config:name="CurrentDatabaseCommandType" config:type="int">0</config:config-item>
    <config:config-item config:name="RedlineProtectionKey" config:type="base64Binary"/>
-   <config:config-item config:name="Rsid" config:type="int">1777373</config:config-item>
+   <config:config-item config:name="Rsid" config:type="int">1783812</config:config-item>
    <config:config-item config:name="PrintProspectRTL" config:type="boolean">false</config:config-item>
    <config:config-item config:name="PrinterSetup" config:type="base64Binary"/>
    <config:config-item config:name="AlignTabStopPosition" config:type="boolean">true</config:config-item>
@@ -140,17 +140,17 @@
   </style:default-style>
   <style:style style:name="Standard" style:family="paragraph" style:class="text"/>
   <style:style style:name="Heading" style:family="paragraph" style:parent-style-name="Standard" style:next-style-name="Text_20_body" style:class="text">
-   <style:paragraph-properties fo:margin-top="0.423cm" fo:margin-bottom="0.212cm" loext:contextual-spacing="false" fo:keep-with-next="always"/>
+   <style:paragraph-properties fo:margin-top="0.423cm" fo:margin-bottom="0.212cm" style:contextual-spacing="false" fo:keep-with-next="always"/>
    <style:text-properties style:font-name="Liberation Sans" fo:font-family="&apos;Liberation Sans&apos;" style:font-family-generic="swiss" style:font-pitch="variable" fo:font-size="14pt" style:font-name-asian="Droid Sans Fallback" style:font-family-asian="&apos;Droid Sans Fallback&apos;" style:font-family-generic-asian="system" style:font-pitch-asian="variable" style:font-size-asian="14pt" style:font-name-complex="FreeSans" style:font-family-complex="FreeSans" style:font-family-generic-complex="system" style:font-pitch-complex="variable" style:font-size-complex="14pt"/>
   </style:style>
   <style:style style:name="Text_20_body" style:display-name="Text body" style:family="paragraph" style:parent-style-name="Standard" style:class="text">
-   <style:paragraph-properties fo:margin-top="0cm" fo:margin-bottom="0.247cm" loext:contextual-spacing="false" fo:line-height="120%"/>
+   <style:paragraph-properties fo:margin-top="0cm" fo:margin-bottom="0.247cm" style:contextual-spacing="false" fo:line-height="120%"/>
   </style:style>
   <style:style style:name="List" style:family="paragraph" style:parent-style-name="Text_20_body" style:class="list">
    <style:text-properties style:font-size-asian="12pt" style:font-name-complex="FreeSans1" style:font-family-complex="FreeSans" style:font-family-generic-complex="swiss"/>
   </style:style>
   <style:style style:name="Caption" style:family="paragraph" style:parent-style-name="Standard" style:class="extra">
-   <style:paragraph-properties fo:margin-top="0.212cm" fo:margin-bottom="0.212cm" loext:contextual-spacing="false" text:number-lines="false" text:line-number="0"/>
+   <style:paragraph-properties fo:margin-top="0.212cm" fo:margin-bottom="0.212cm" style:contextual-spacing="false" text:number-lines="false" text:line-number="0"/>
    <style:text-properties fo:font-size="12pt" fo:font-style="italic" style:font-size-asian="12pt" style:font-style-asian="italic" style:font-name-complex="FreeSans1" style:font-family-complex="FreeSans" style:font-family-generic-complex="swiss" style:font-size-complex="12pt" style:font-style-complex="italic"/>
   </style:style>
   <style:style style:name="Index" style:family="paragraph" style:parent-style-name="Standard" style:class="index">
@@ -158,26 +158,26 @@
    <style:text-properties style:font-size-asian="12pt" style:font-name-complex="FreeSans1" style:font-family-complex="FreeSans" style:font-family-generic-complex="swiss"/>
   </style:style>
   <style:style style:name="Quotations" style:family="paragraph" style:parent-style-name="Standard" style:class="html">
-   <style:paragraph-properties fo:margin-left="1cm" fo:margin-right="1cm" fo:margin-top="0cm" fo:margin-bottom="0.499cm" loext:contextual-spacing="false" fo:text-indent="0cm" style:auto-text-indent="false"/>
+   <style:paragraph-properties fo:margin-left="1cm" fo:margin-right="1cm" fo:margin-top="0cm" fo:margin-bottom="0.499cm" style:contextual-spacing="false" fo:text-indent="0cm" style:auto-text-indent="false"/>
   </style:style>
   <style:style style:name="Title" style:family="paragraph" style:parent-style-name="Heading" style:next-style-name="Text_20_body" style:class="chapter">
    <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
    <style:text-properties fo:font-size="28pt" fo:font-weight="bold" style:font-size-asian="28pt" style:font-weight-asian="bold" style:font-size-complex="28pt" style:font-weight-complex="bold"/>
   </style:style>
   <style:style style:name="Subtitle" style:family="paragraph" style:parent-style-name="Heading" style:next-style-name="Text_20_body" style:class="chapter">
-   <style:paragraph-properties fo:margin-top="0.106cm" fo:margin-bottom="0.212cm" loext:contextual-spacing="false" fo:text-align="center" style:justify-single-word="false"/>
+   <style:paragraph-properties fo:margin-top="0.106cm" fo:margin-bottom="0.212cm" style:contextual-spacing="false" fo:text-align="center" style:justify-single-word="false"/>
    <style:text-properties fo:font-size="18pt" style:font-size-asian="18pt" style:font-size-complex="18pt"/>
   </style:style>
   <style:style style:name="Heading_20_1" style:display-name="Heading 1" style:family="paragraph" style:parent-style-name="Heading" style:next-style-name="Text_20_body" style:default-outline-level="1" style:class="text">
-   <style:paragraph-properties fo:margin-top="0.423cm" fo:margin-bottom="0.212cm" loext:contextual-spacing="false"/>
+   <style:paragraph-properties fo:margin-top="0.423cm" fo:margin-bottom="0.212cm" style:contextual-spacing="false"/>
    <style:text-properties fo:font-size="130%" fo:font-weight="bold" style:font-size-asian="130%" style:font-weight-asian="bold" style:font-size-complex="130%" style:font-weight-complex="bold"/>
   </style:style>
   <style:style style:name="Heading_20_2" style:display-name="Heading 2" style:family="paragraph" style:parent-style-name="Heading" style:next-style-name="Text_20_body" style:default-outline-level="2" style:class="text">
-   <style:paragraph-properties fo:margin-top="0.353cm" fo:margin-bottom="0.212cm" loext:contextual-spacing="false"/>
+   <style:paragraph-properties fo:margin-top="0.353cm" fo:margin-bottom="0.212cm" style:contextual-spacing="false"/>
    <style:text-properties fo:font-size="115%" fo:font-weight="bold" style:font-size-asian="115%" style:font-weight-asian="bold" style:font-size-complex="115%" style:font-weight-complex="bold"/>
   </style:style>
   <style:style style:name="Heading_20_3" style:display-name="Heading 3" style:family="paragraph" style:parent-style-name="Heading" style:next-style-name="Text_20_body" style:default-outline-level="3" style:class="text">
-   <style:paragraph-properties fo:margin-top="0.247cm" fo:margin-bottom="0.212cm" loext:contextual-spacing="false"/>
+   <style:paragraph-properties fo:margin-top="0.247cm" fo:margin-bottom="0.212cm" style:contextual-spacing="false"/>
    <style:text-properties fo:color="#808080" fo:font-size="14pt" fo:font-weight="bold" style:font-size-asian="14pt" style:font-weight-asian="bold" style:font-size-complex="14pt" style:font-weight-complex="bold"/>
   </style:style>
   <style:style style:name="Table_20_Contents" style:display-name="Table Contents" style:family="paragraph" style:parent-style-name="Standard" style:class="extra">
@@ -283,32 +283,35 @@
   <style:style style:name="P4" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties officeooo:rsid="0017c5f8" officeooo:paragraph-rsid="0017c5f8"/>
   </style:style>
-  <style:style style:name="P5" style:family="paragraph" style:parent-style-name="Title">
+  <style:style style:name="P5" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:rsid="001b1edd" officeooo:paragraph-rsid="001b1edd"/>
+  </style:style>
+  <style:style style:name="P6" style:family="paragraph" style:parent-style-name="Title">
    <style:text-properties officeooo:rsid="001696bd" officeooo:paragraph-rsid="001696bd"/>
   </style:style>
-  <style:style style:name="P6" style:family="paragraph" style:parent-style-name="Subtitle">
+  <style:style style:name="P7" style:family="paragraph" style:parent-style-name="Subtitle">
    <style:text-properties officeooo:rsid="001696bd" officeooo:paragraph-rsid="001696bd"/>
   </style:style>
-  <style:style style:name="P7" style:family="paragraph" style:parent-style-name="Heading_20_1">
-   <style:text-properties officeooo:rsid="001696bd" officeooo:paragraph-rsid="001696bd"/>
-  </style:style>
-  <style:style style:name="P8" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+  <style:style style:name="P8" style:family="paragraph" style:parent-style-name="Heading_20_1">
    <style:text-properties officeooo:rsid="001696bd" officeooo:paragraph-rsid="001696bd"/>
   </style:style>
   <style:style style:name="P9" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:text-properties officeooo:rsid="0017c5f8" officeooo:paragraph-rsid="0017c5f8"/>
+   <style:text-properties officeooo:rsid="001696bd" officeooo:paragraph-rsid="001696bd"/>
   </style:style>
   <style:style style:name="P10" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:text-properties officeooo:rsid="0017c5f8" officeooo:paragraph-rsid="0017c5f8"/>
+  </style:style>
+  <style:style style:name="P11" style:family="paragraph" style:parent-style-name="Table_20_Contents">
    <style:text-properties officeooo:rsid="001ac56d" officeooo:paragraph-rsid="001ac56d"/>
   </style:style>
-  <style:style style:name="P11" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="00176261" officeooo:paragraph-rsid="00176261"/>
-  </style:style>
-  <style:style style:name="P12" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="001b1edd" officeooo:paragraph-rsid="001b1edd"/>
-  </style:style>
-  <style:style style:name="P13" style:family="paragraph" style:parent-style-name="Heading_20_1">
+  <style:style style:name="P12" style:family="paragraph" style:parent-style-name="Heading_20_1">
    <style:text-properties officeooo:rsid="001696bd" officeooo:paragraph-rsid="001696bd"/>
+  </style:style>
+  <style:style style:name="P13" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:text-properties officeooo:rsid="001696bd" officeooo:paragraph-rsid="001696bd"/>
+  </style:style>
+  <style:style style:name="P14" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:text-properties officeooo:rsid="001b3804" officeooo:paragraph-rsid="001b3804"/>
   </style:style>
   <style:style style:name="T1" style:family="text">
    <style:text-properties officeooo:rsid="0017c5f8"/>
@@ -344,9 +347,9 @@
     <text:sequence-decl text:display-outline-level="0" text:name="Text"/>
     <text:sequence-decl text:display-outline-level="0" text:name="Drawing"/>
    </text:sequence-decls>
-   <text:p text:style-name="P5">Corps Diplomatique</text:p>
-   <text:p text:style-name="P6">Fiche technique</text:p>
-   <text:h text:style-name="P7" text:outline-level="1">Architecture réseau</text:h>
+   <text:p text:style-name="P6">Corps Diplomatique</text:p>
+   <text:p text:style-name="P7">Fiche technique</text:p>
+   <text:h text:style-name="P8" text:outline-level="1">Architecture réseau</text:h>
    <table:table table:name="Tableau1" table:style-name="Tableau1">
     <table:table-column table:style-name="Tableau1.A"/>
     <table:table-column table:style-name="Tableau1.B"/>
@@ -354,69 +357,70 @@
     <table:table-column table:style-name="Tableau1.D"/>
     <table:table-row>
      <table:table-cell table:style-name="Tableau1.A1" office:value-type="string">
-      <text:p text:style-name="P8">Quoi</text:p>
+      <text:p text:style-name="P9">Quoi</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.A1" office:value-type="string">
-      <text:p text:style-name="P8">Device</text:p>
+      <text:p text:style-name="P9">Device</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.A1" office:value-type="string">
-      <text:p text:style-name="P8">IP</text:p>
+      <text:p text:style-name="P9">IP</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.D1" office:value-type="string">
-      <text:p text:style-name="P8">Login / mot de passe</text:p>
+      <text:p text:style-name="P9">Login / mot de passe</text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P8">LedMediaServer</text:p>
+      <text:p text:style-name="P9">LedMediaServer</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P8">MacMini / ubuntu</text:p>
+      <text:p text:style-name="P9">MacMini / ubuntu</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P8">10.42.0.<text:span text:style-name="T3">10</text:span></text:p>
+      <text:p text:style-name="P9">10.42.0.<text:span text:style-name="T3">10</text:span></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.D2" office:value-type="string">
-      <text:p text:style-name="P9">halory / halory</text:p>
+      <text:p text:style-name="P10">halory / halory</text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P9">Son</text:p>
+      <text:p text:style-name="P10">Son</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P10">MacMini / 0S X 10.10</text:p>
+      <text:p text:style-name="P11">MacMini / 0S X 10.10</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P9">10.42.0.<text:span text:style-name="T3">11</text:span></text:p>
+      <text:p text:style-name="P10">10.42.0.<text:span text:style-name="T3">11</text:span></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.D2" office:value-type="string">
-      <text:p text:style-name="P8"/>
+      <text:p text:style-name="P9"/>
      </table:table-cell>
     </table:table-row>
     <table:table-row>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P8">Compteur</text:p>
+      <text:p text:style-name="P9">Compteur</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P8">RaspberryPi</text:p>
+      <text:p text:style-name="P9">RaspberryPi</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P8">10.42.0.<text:span text:style-name="T2">2</text:span>0</text:p>
+      <text:p text:style-name="P9">10.42.0.<text:span text:style-name="T2">2</text:span>0</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.D2" office:value-type="string">
-      <text:p text:style-name="P8">pi / pi</text:p>
+      <text:p text:style-name="P9">pi / pi</text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row>
      <table:table-cell table:style-name="Tableau1.A2" table:number-rows-spanned="2" office:value-type="string">
-      <text:p text:style-name="P8">Banière 1</text:p>
+      <text:p text:style-name="P9">Banière 1</text:p>
+      <text:p text:style-name="P14">+ camera</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P8">PixelPusher</text:p>
+      <text:p text:style-name="P9">PixelPusher</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P8">10.42.0.21</text:p>
+      <text:p text:style-name="P9">10.42.0.21</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.D2" office:value-type="string">
       <text:p text:style-name="Table_20_Contents">console USB 115200 bd / <text:s/>framing is 8,n,1</text:p>
@@ -425,24 +429,24 @@
     <table:table-row>
      <table:covered-table-cell/>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P8">RaspberryPi</text:p>
+      <text:p text:style-name="P9">RaspberryPi</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P8">10.42.0.22</text:p>
+      <text:p text:style-name="P9">10.42.0.22</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.D2" office:value-type="string">
-      <text:p text:style-name="P9">pi / pi</text:p>
+      <text:p text:style-name="P10">pi / pi</text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row>
      <table:table-cell table:style-name="Tableau1.A2" table:number-rows-spanned="2" office:value-type="string">
-      <text:p text:style-name="P8">Banière 2</text:p>
+      <text:p text:style-name="P9">Banière 2</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P8">PixelPusher</text:p>
+      <text:p text:style-name="P9">PixelPusher</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P8">10.42.0.23</text:p>
+      <text:p text:style-name="P9">10.42.0.23</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.D2" office:value-type="string">
       <text:p text:style-name="Table_20_Contents">console USB 115200 bd / <text:s/>framing is 8,n,1</text:p>
@@ -451,24 +455,24 @@
     <table:table-row>
      <table:covered-table-cell/>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P8">RaspberryPi</text:p>
+      <text:p text:style-name="P9">RaspberryPi</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P8">10.42.0.24</text:p>
+      <text:p text:style-name="P9">10.42.0.24</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.D2" office:value-type="string">
-      <text:p text:style-name="P9">pi / pi</text:p>
+      <text:p text:style-name="P10">pi / pi</text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row>
      <table:table-cell table:style-name="Tableau1.A2" table:number-rows-spanned="2" office:value-type="string">
-      <text:p text:style-name="P8">Banière 3</text:p>
+      <text:p text:style-name="P9">Banière 3</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P8">PixelPusher</text:p>
+      <text:p text:style-name="P9">PixelPusher</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P8">10.42.0.25</text:p>
+      <text:p text:style-name="P9">10.42.0.25</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.D2" office:value-type="string">
       <text:p text:style-name="Table_20_Contents">console USB 115200 bd / <text:s/>framing is 8,n,1</text:p>
@@ -477,13 +481,13 @@
     <table:table-row>
      <table:covered-table-cell/>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P8">RaspberryPi</text:p>
+      <text:p text:style-name="P9">RaspberryPi</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P8">10.42.0.26</text:p>
+      <text:p text:style-name="P9">10.42.0.26</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.D2" office:value-type="string">
-      <text:p text:style-name="P9">pi / pi</text:p>
+      <text:p text:style-name="P10">pi / pi</text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row>
@@ -522,8 +526,8 @@
    <text:p text:style-name="P4">Le compteur se comporte comme un PixelPusher bien que ce soit une Raspberry Pi.</text:p>
    <text:p text:style-name="P3">Les boutons des banières envoient leur status <text:span text:style-name="T3">au LedMediaServer </text:span>via le port <text:span text:style-name="T3">9001,9002 et 9003.</text:span></text:p>
    <text:h text:style-name="Heading_20_1" text:outline-level="1">Configuration ordinateur de régie</text:h>
-   <text:p text:style-name="P12">Outer la configuration réseau qui doit être faite manuellement suivant le tableau ci-dessus. Il faut – of course – installer Live et Max4Live.</text:p>
-   <text:p text:style-name="P12">Les device M4L sont dans la Dropbox (pour l&apos;instant). Dans le dossier &quot;SHOW/CoDi-LiveSet Project/Preset/M4L Devices&quot;. <text:span text:style-name="T5">Il faut ajouter ce dossier aux searchs paths de Max</text:span> (Options → File Preferences) sans quoi, les presets de devices ne se chargeront pas correctement. Si le set Live est déplacé, il faut actualiser l&apos;emplacement dans Max.</text:p>
+   <text:p text:style-name="P5">Outer la configuration réseau qui doit être faite manuellement suivant le tableau ci-dessus. Il faut – of course – installer Live et Max4Live.</text:p>
+   <text:p text:style-name="P5">Les device M4L sont dans la Dropbox (pour l&apos;instant). Dans le dossier &quot;SHOW/CoDi-LiveSet Project/Preset/M4L Devices&quot;. <text:span text:style-name="T5">Il faut ajouter ce dossier aux searchs paths de Max</text:span> (Options → File Preferences) sans quoi, les presets de devices ne se chargeront pas correctement. Si le set Live est déplacé, il faut actualiser l&apos;emplacement dans Max.</text:p>
   </office:text>
  </office:body>
 </office:document>
