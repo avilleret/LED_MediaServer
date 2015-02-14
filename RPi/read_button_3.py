@@ -18,7 +18,7 @@ GPIO.setup(pinRed,GPIO.IN)
 
 # setup OSC
 client = OSC.OSCClient()
-client.connect( ('10.42.0.1', 9003) )
+client.connect( ('10.42.0.1', 9008) )
 
 while True:
         tmpGreen = (GPIO.input(pinGreen) == 0 )
