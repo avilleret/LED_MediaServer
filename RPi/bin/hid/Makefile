@@ -33,7 +33,7 @@ EXTRA_SOURCES = input_arrays.c hid_linux.c hid_darwin.c
 #------------------------------------------------------------------------------#
 
 # -I"$(PD_INCLUDE)/pd" supports the header location for 0.43
-CFLAGS = -I"$(PD_INCLUDE)/pd" -Wall -W -g
+CFLAGS = -I"$(PD_INCLUDE)" -Wall -W -g
 LDFLAGS =  
 LIBS = 
 
@@ -48,7 +48,7 @@ LIBRARY_VERSION = $(shell sed -n 's|^\#X text [0-9][0-9]* [0-9][0-9]* VERSION \(
 
 CFLAGS += -DPD -DVERSION='"$(LIBRARY_VERSION)"'
 
-PD_INCLUDE = $(PD_PATH)/include
+PD_INCLUDE = /home/pi/Corps_Diplomatique/RPi/bin/pd-0.46-4/src
 # where to install the library, overridden below depending on platform
 prefix = /usr/local
 libdir = $(prefix)/lib
