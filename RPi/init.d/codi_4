@@ -1,2 +1,2 @@
 #! /bin/sh
-/home/pi/Corps_Diplomatique/RPi/pd.sh &
+sudo -u pi /home/pi/Corps_Diplomatique/RPi/pd.sh &
