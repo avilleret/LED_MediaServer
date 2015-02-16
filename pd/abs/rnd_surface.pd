@@ -1,0 +1,16 @@
+#N canvas 493 183 450 300 10;
+#X obj 139 121 random 100;
+#X obj 139 251 outlet;
+#X obj 139 168 / 20;
+#X obj 232 69 r \$0-line_forme3;
+#X obj 140 70 r forme3-shape;
+#X obj 139 199 pack 0 2000;
+#X obj 139 227 line3;
+#X obj 134 143 - 20;
+#X connect 0 0 7 0;
+#X connect 2 0 5 0;
+#X connect 3 0 5 1;
+#X connect 4 0 0 0;
+#X connect 5 0 6 0;
+#X connect 6 0 1 0;
+#X connect 7 0 2 0;
