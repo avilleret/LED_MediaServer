@@ -1,4 +1,4 @@
-#N canvas 115 811 442 207 10;
+#N canvas 113 816 442 207 10;
 #X declare -path ../osc;
 #X declare -path ../osc;
 #X declare -path ../osc;
@@ -2001,7 +2001,7 @@
 #X restore 7 22 pd OSC;
 #X obj 8 45 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#N canvas 821 197 766 881 rx_clavier 0;
+#N canvas 819 174 766 881 rx_clavier 0;
 #X obj 31 11 netreceive -u 9011;
 #X obj 31 31 route ping;
 #X obj 31 51 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
@@ -2043,11 +2043,11 @@
 #X obj 94 427 list prepend;
 #X obj 163 401 list;
 #X obj 135 629 symbol;
-#X msg 181 702 1234567890123456789012344;
+#X msg 181 702 ;
 #X obj 346 627 symbol;
 #X obj 362 655 list prepend set;
 #X obj 362 679 list trim;
-#X msg 362 711 dgdfgfgdgfgfgdfmkl;
+#X msg 362 711 dfg;
 #X msg 246 585 symbol;
 #X obj 599 292 list length;
 #X obj 597 313 - 1;
@@ -2064,13 +2064,13 @@
 #X text 238 124 SPACE RETURN SHIFT DROP;
 #X obj 88 120 route 95 82 83 68;
 #X obj 94 462 t a;
-#X obj 122 538 - 100;
 #X text 186 542 changer le nb max de caracteres a afficher;
 #X obj 135 755 s from_i-score;
 #X msg 135 734 /compteur/text/11/text \$1;
 #X obj 346 754 s from_i-score;
 #X msg 346 733 /compteur/text/12/text \$1;
 #X msg 162 377 list;
+#X obj 122 538 - 32;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 1 1 3 0;
@@ -2091,7 +2091,7 @@
 #X connect 14 0 8 0;
 #X connect 15 1 14 0;
 #X connect 16 0 15 0;
-#X connect 17 0 50 0;
+#X connect 17 0 49 0;
 #X connect 17 1 29 0;
 #X connect 17 2 25 0;
 #X connect 18 0 23 0;
@@ -2101,9 +2101,9 @@
 #X connect 22 0 21 1;
 #X connect 23 0 19 0;
 #X connect 23 0 25 1;
-#X connect 23 0 47 0;
+#X connect 23 0 46 0;
 #X connect 25 0 26 0;
-#X connect 25 0 49 0;
+#X connect 25 0 48 0;
 #X connect 26 0 27 0;
 #X connect 27 0 28 0;
 #X connect 29 0 23 0;
@@ -2117,7 +2117,7 @@
 #X connect 35 0 33 0;
 #X connect 36 0 43 0;
 #X connect 37 1 18 0;
-#X connect 38 0 44 0;
+#X connect 38 0 50 0;
 #X connect 39 0 37 0;
 #X connect 39 1 38 0;
 #X connect 42 0 7 0;
@@ -2128,10 +2128,10 @@
 #X connect 43 0 22 0;
 #X connect 43 0 33 1;
 #X connect 43 0 39 0;
-#X connect 44 0 37 1;
-#X connect 47 0 46 0;
-#X connect 49 0 48 0;
-#X connect 50 0 22 0;
+#X connect 46 0 45 0;
+#X connect 48 0 47 0;
+#X connect 49 0 22 0;
+#X connect 50 0 37 1;
 #X restore 102 129 pd rx_clavier;
 #N canvas 602 531 283 293 camera 0;
 #X obj 19 82 pix_info, f 27;
@@ -2155,7 +2155,7 @@
 #X connect 7 0 0 0;
 #X restore 105 103 pd camera;
 #X obj 8 145 midi-remote;
-#N canvas 616 264 1021 619 compteur 0;
+#N canvas 614 269 1021 619 compteur 1;
 #X obj 197 18 loadbang;
 #X obj 94 38 t a a;
 #X obj 121 120 translateXYZ 0 0 -4;
