@@ -1,4 +1,4 @@
-#N canvas 13 829 442 207 10;
+#N canvas 11 845 442 207 10;
 #X declare -path ../osc;
 #X declare -path ../osc;
 #X declare -path ../osc;
@@ -2133,7 +2133,7 @@
 #X connect 49 0 22 0;
 #X connect 50 0 37 1;
 #X restore 104 124 pd rx_clavier;
-#N canvas 602 531 283 293 camera 0;
+#N canvas 600 575 283 293 camera 1;
 #X obj 19 82 pix_info, f 27;
 #X floatatom 37 116 5 0 0 0 - - -, f 5;
 #X floatatom 72 115 5 0 0 0 - - -, f 5;
@@ -2153,6 +2153,7 @@
 #X connect 5 0 6 0;
 #X connect 6 0 9 0;
 #X connect 7 0 0 0;
+#X connect 9 0 7 0;
 #X restore 105 103 pd camera;
 #X obj 8 145 midi-remote;
 #N canvas 612 274 1021 619 compteur 0;
