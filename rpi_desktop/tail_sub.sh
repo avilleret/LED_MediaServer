@@ -14,7 +14,7 @@ do
     if [ -d "$i" ]
     then
         # echo $i
-        ./tail_sub.sh $i
+        /home/pi/Corps_Diplomatique/rpi_desktop/tail_sub.sh $i
     fi
 done
 

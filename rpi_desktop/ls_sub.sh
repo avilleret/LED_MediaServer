@@ -7,7 +7,7 @@ do
     if [ -d $i ]
     then
         echo $i
-        ./ls_sub.sh $i
+        /home/pi/Corps_Diplomatique/rpi_desktop/ls_sub.sh $i
     fi
 done
 
