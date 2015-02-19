@@ -3151,7 +3151,7 @@ RGB \, type BYTE;
 #X restore 124 144 pd winamp;
 #X obj 105 146 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#N canvas 1076 94 579 955 control_screen_display 0;
+#N canvas 1072 100 579 955 control_screen_display 1;
 #X obj 58 81 metro 50;
 #X obj 58 58 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
 ;
@@ -3168,23 +3168,28 @@ RGB \, type BYTE;
 #X obj 58 752 netsend -u;
 #X obj 136 634 metro 1000;
 #X obj 136 613 loadbang;
-#X obj 58 776 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 58 776 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 58 799 == 0;
 #X obj 136 680 spigot 1;
 #X obj 58 681 spigot 0;
 #X msg 212 718 disconnect;
 #X msg 136 659 connect 10.42.0.31 9020;
-#X msg 89 256 send /home/pi/Corps_Diplomatique/rpi_desktop/script_ls.sh
+#X msg 152 417 send killall pd;
+#X obj 210 606 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X msg 127 348 send /home/pi/Corps_Diplomatique/rpi_desktop/script_graph1.sh
 ;
-#X msg 114 326 send /home/pi/Corps_Diplomatique/rpi_desktop/script_fenettre.sh
+#X msg 141 380 send /home/pi/Corps_Diplomatique/rpi_desktop/script_graph2.sh
 ;
-#X msg 133 374 send /home/pi/Corps_Diplomatique/rpi_desktop/script_graph1.sh
+#X msg 98 283 send /home/pi/Corps_Diplomatique/rpi_desktop/start_tail.sh
 ;
-#X msg 153 412 send /home/pi/Corps_Diplomatique/rpi_desktop/script_graph2.sh
+#X msg 118 312 send /home/pi/Corps_Diplomatique/rpi_desktop/script_fenettres.sh
 ;
-#X msg 104 282 send /home/pi/Corps_Diplomatique/rpi_desktop/script_tail.sh
+#X msg 90 255 send /home/pi/Corps_Diplomatique/rpi_desktop/start_ls.sh
 ;
+#X msg 180 481 send killall script_ls.sh;
+#X msg 170 460 send killall script_tail.sh;
 #X connect 0 0 4 0;
 #X connect 0 0 5 0;
 #X connect 1 0 0 0;
@@ -3209,10 +3214,14 @@ RGB \, type BYTE;
 #X connect 19 0 12 0;
 #X connect 20 0 17 0;
 #X connect 21 0 18 0;
-#X connect 22 0 18 0;
+#X connect 22 0 13 0;
 #X connect 23 0 18 0;
 #X connect 24 0 18 0;
 #X connect 25 0 18 0;
+#X connect 26 0 18 0;
+#X connect 27 0 18 0;
+#X connect 28 0 18 0;
+#X connect 29 0 18 0;
 #X restore 103 176 pd control_screen_display;
 #X connect 1 0 0 0;
 #X connect 4 0 5 0;
