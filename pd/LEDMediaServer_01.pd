@@ -1,4 +1,4 @@
-#N canvas 11 845 442 207 10;
+#N canvas 89 613 442 207 10;
 #X declare -path ../osc;
 #X declare -path ../osc;
 #X declare -path ../osc;
@@ -2133,7 +2133,7 @@
 #X connect 49 0 22 0;
 #X connect 50 0 37 1;
 #X restore 104 124 pd rx_clavier;
-#N canvas 600 575 283 293 camera 1;
+#N canvas 598 608 283 293 camera 0;
 #X obj 19 82 pix_info, f 27;
 #X floatatom 37 116 5 0 0 0 - - -, f 5;
 #X floatatom 72 115 5 0 0 0 - - -, f 5;
@@ -3151,6 +3151,40 @@ RGB \, type BYTE;
 #X restore 124 144 pd winamp;
 #X obj 105 146 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
+#N canvas 702 246 645 684 control_screen_display 0;
+#X obj 62 642 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 58 614 netsend -u;
+#X msg 103 579 connect 10.42.0.31 9020;
+#X obj 58 81 metro 50;
+#X obj 58 58 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
+;
+#X msg 58 228 send xdotool mousemove \$1 \$2;
+#X obj 58 203 pack f f;
+#X obj 58 107 rnd_flow 100 10 11;
+#X obj 182 108 rnd_flow 100 10 11;
+#X obj 58 152 min 1024;
+#X obj 58 176 max 0;
+#X obj 58 130 + 512;
+#X obj 182 177 max 0;
+#X obj 182 156 min 768;
+#X obj 182 131 + 384;
+#X connect 1 0 0 0;
+#X connect 2 0 1 0;
+#X connect 3 0 7 0;
+#X connect 3 0 8 0;
+#X connect 4 0 3 0;
+#X connect 5 0 1 0;
+#X connect 6 0 5 0;
+#X connect 7 0 11 0;
+#X connect 8 0 14 0;
+#X connect 9 0 10 0;
+#X connect 10 0 6 0;
+#X connect 11 0 9 0;
+#X connect 12 0 6 1;
+#X connect 13 0 12 0;
+#X connect 14 0 13 0;
+#X restore 103 176 pd control_screen_display;
 #X connect 1 0 0 0;
 #X connect 4 0 5 0;
 #X connect 6 0 7 0;
