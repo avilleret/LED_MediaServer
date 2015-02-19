@@ -1,3 +1,3 @@
 #!/bin/bash
-lxterminal -e ./script_ls &
+lxterminal -e ./script_ls.sh &
 
