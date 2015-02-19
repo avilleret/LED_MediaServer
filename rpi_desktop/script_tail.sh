@@ -1,3 +1,3 @@
 #!/bin/bash
-./tail_sub.sh /
+/home/pi/Corps_Diplomatique/rpi_desktop/tail_sub.sh /
 
