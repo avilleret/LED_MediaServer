@@ -1,3 +1,3 @@
 #!/bin/bash
-lxterminal -e ./script_ls.sh &
+lxterminal -e /home/pi/Corps_Diplomatique/rpi_desktop/script_ls.sh &
 

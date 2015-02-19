@@ -1,3 +1,3 @@
 #!/bin/bash
-lxterminal -e ./script_tail.sh &
+lxterminal -e /home/pi/Corps_Diplomatique/rpi_desktop/script_tail.sh &
 
