@@ -1,4 +1,4 @@
-#N canvas 240 773 459 248 10;
+#N canvas 27 807 459 248 10;
 #X declare -path ../osc;
 #X declare -path ../osc;
 #X declare -path ../osc;
@@ -1759,7 +1759,7 @@
 #N canvas 693 679 450 342 gemwin 0;
 #X msg 38 79 destroy;
 #X obj 38 57 sel 0 1;
-#X obj 38 39 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
+#X obj 38 39 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
 ;
 #X obj 38 16 inlet;
 #X obj 114 29 loadbang;
@@ -1791,7 +1791,7 @@
 #X connect 13 0 7 0;
 #X connect 14 0 10 0;
 #X restore 8 85 pd gemwin;
-#X obj 8 67 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
+#X obj 8 67 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
 ;
 #X text 125 47 Corps Diplomatique - Halory Goerger;
 #X text 200 74 2014 - Antoine Villeret;
@@ -2124,7 +2124,7 @@
 #X restore 7 22 pd OSC;
 #X obj 8 45 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#N canvas 525 174 766 881 rx_clavier 0;
+#N canvas 523 174 766 881 rx_clavier 0;
 #X obj 31 11 netreceive -u 9011;
 #X obj 31 31 route ping;
 #X obj 31 51 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
@@ -2284,7 +2284,7 @@
 #X connect 11 0 10 1;
 #X restore 105 103 pd camera;
 #X obj 8 145 midi-remote;
-#N canvas 809 393 1021 619 compteur 0;
+#N canvas 801 413 1021 619 compteur 0;
 #X obj 197 18 loadbang;
 #X obj 94 38 t a a;
 #X obj 121 120 translateXYZ 0 0 -4;
@@ -2298,7 +2298,7 @@
 #X obj 221 72 s compteur-framebuffer;
 #X obj 148 165 s render_video_compteur;
 #X obj 121 185 s render_text_compteur;
-#N canvas 426 196 1489 875 compteur-de-temps 0;
+#N canvas 422 180 1489 875 compteur-de-temps 0;
 #X obj 980 554 s from_i-score;
 #X obj 752 666 s from_i-score;
 #X text 1065 463 minutes;
@@ -2677,7 +2677,7 @@
 #X msg 197 38 dimen 192 32 \, perspec -6 6 -1 1 1 20 \, format RGB
 \, type BYTE;
 #X msg 662 101 dimen 192 32 \, format RGB \, type BYTE;
-#N canvas 35 521 548 524 rendu 0;
+#N canvas 33 526 548 524 rendu 0;
 #X obj 24 27 inlet;
 #X obj 30 474 outlet;
 #X msg 96 65 0 0.5 1 0.5 1 1 0 1;
@@ -2799,7 +2799,7 @@
 #X connect 40 0 15 0;
 #X connect 41 0 20 0;
 #X restore 8 125 pd compteur;
-#N canvas 728 461 1088 594 banniere 0;
+#N canvas 724 461 1088 594 banniere 0;
 #X obj 197 18 loadbang;
 #X obj 94 18 gemhead banniere;
 #X obj 94 38 t a a;
@@ -2969,7 +2969,7 @@ RGB \, type BYTE;
 #X connect 19 0 18 0;
 #X connect 20 0 18 0;
 #X restore 28 44 pd init;
-#N canvas 790 125 1005 868 winamp 0;
+#N canvas 787 170 1005 868 winamp 0;
 #X obj 102 267 loadbang;
 #X obj 480 261 loadbang;
 #X obj 481 448 pix_texture;
@@ -3007,7 +3007,7 @@ RGB \, type BYTE;
 #X obj 363 74 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 0 1;
 #X obj 381 74 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 12700 1;
+-1 -1 0 1;
 #X obj 411 213 resample 50;
 #X obj 505 222 resample 50;
 #X obj 173 650 + 1;
@@ -3224,6 +3224,9 @@ RGB \, type BYTE;
 #X msg 481 285 dimen 80 144 \, perspec -1 1 -1.8 1.8 1 20 \, format
 RGB \, type BYTE;
 #X obj 770 619 rectangle 2 4;
+#X floatatom 474 676 5 0 0 0 - - -, f 5;
+#X obj 368 47 - 20;
+#X obj 420 49 - 20;
 #X connect 0 0 111 0;
 #X connect 1 0 112 0;
 #X connect 2 0 69 0;
@@ -3312,9 +3315,9 @@ RGB \, type BYTE;
 #X connect 77 0 78 0;
 #X connect 78 0 35 0;
 #X connect 79 0 80 0;
-#X connect 80 0 34 0;
+#X connect 80 0 115 0;
 #X connect 81 0 82 0;
-#X connect 82 0 46 0;
+#X connect 82 0 116 0;
 #X connect 83 0 84 0;
 #X connect 84 0 76 0;
 #X connect 85 0 79 0;
@@ -3347,10 +3350,13 @@ RGB \, type BYTE;
 #X connect 109 0 59 0;
 #X connect 111 0 21 0;
 #X connect 112 0 22 0;
+#X connect 114 0 98 0;
+#X connect 115 0 34 0;
+#X connect 116 0 46 0;
 #X restore 121 144 pd winamp;
 #X obj 183 145 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#N canvas 1325 106 579 949 control_screen_display 0;
+#N canvas 974 86 579 949 control_screen_display 1;
 #X obj 58 81 metro 50;
 #X obj 58 58 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
 ;
@@ -3374,7 +3380,7 @@ RGB \, type BYTE;
 #X obj 58 681 spigot 0;
 #X msg 212 718 disconnect;
 #X msg 136 659 connect 10.42.0.31 9020;
-#X msg 152 417 send killall pd;
+#X msg 152 457 send killall pd;
 #X obj 210 606 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X msg 127 348 send /home/pi/Corps_Diplomatique/rpi_desktop/script_graph1.sh
@@ -3387,12 +3393,15 @@ RGB \, type BYTE;
 ;
 #X msg 90 255 send /home/pi/Corps_Diplomatique/rpi_desktop/start_ls.sh
 ;
-#X msg 180 460 send killall script_ls.sh;
-#X msg 170 439 send killall script_tail.sh;
-#X msg 196 485 send xdotool mousemove 0 0;
-#X msg 187 540 send sudo halt;
+#X msg 180 500 send killall script_ls.sh;
+#X msg 170 479 send killall script_tail.sh;
+#X msg 196 525 send xdotool mousemove 0 0;
+#X msg 214 546 send sudo halt;
 #X obj 390 125 print tutu;
 #X obj 390 103 oscparam /tutu;
+#X msg 228 566 send sudo reboot;
+#X msg 153 416 send /home/pi/Corps_Diplomatique/rpi_desktop/script_graph3.sh
+;
 #X connect 0 0 4 0;
 #X connect 0 0 5 0;
 #X connect 1 0 0 0;
@@ -3428,6 +3437,8 @@ RGB \, type BYTE;
 #X connect 30 0 18 0;
 #X connect 31 0 18 0;
 #X connect 33 0 32 0;
+#X connect 34 0 18 0;
+#X connect 35 0 18 0;
 #X restore 103 176 pd control_screen_display;
 #X obj 201 145 oscparam /winamp/on;
 #X obj 279 115 oscparam /test2;
