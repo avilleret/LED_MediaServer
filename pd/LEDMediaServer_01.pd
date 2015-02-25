@@ -1,4 +1,4 @@
-#N canvas 51 687 371 338 10;
+#N canvas 49 731 371 338 10;
 #X declare -path ../osc;
 #X declare -path ../osc;
 #X declare -path ../osc;
@@ -2092,7 +2092,7 @@
 #X obj 106 388 unpackOSC;
 #X obj 106 367 netreceive -u -b 11000;
 #X obj 252 38 r to_PixelPusher;
-#N canvas 531 512 833 513 test 1;
+#N canvas 529 528 833 513 test 0;
 #X obj 60 410 s to_PixelPusher;
 #X obj 71 50 metro 1000;
 #X obj 67 15 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
@@ -2321,7 +2321,7 @@
 #X connect 27 0 26 0;
 #X connect 28 0 20 0;
 #X restore 92 22 pd PixelPusherOSC;
-#N canvas 659 545 418 510 OSC 0;
+#N canvas 657 561 418 510 OSC 1;
 #X obj 41 413 s from_i-score;
 #X obj 252 38 r to_i-score;
 #X obj 195 158 loadbang;
@@ -2335,7 +2335,7 @@
 1;
 #X obj 252 162 print to_i-score;
 #X obj 106 436 spigot;
-#X obj 139 417 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 139 417 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 133 246 t f f f;
 #X obj 133 107 list prepend send;
@@ -2361,6 +2361,7 @@
 #X obj 227 11 inlet;
 #X obj 106 476 print from_osc;
 #X obj 15 291 loadbang;
+#X obj 259 367 sadam.receiveosc;
 #X connect 1 0 7 0;
 #X connect 1 0 16 0;
 #X connect 2 0 5 0;
@@ -2395,6 +2396,8 @@
 #X connect 31 0 12 0;
 #X connect 32 0 22 0;
 #X connect 34 0 15 0;
+#X connect 35 0 0 0;
+#X connect 35 0 10 0;
 #X restore 7 22 pd OSC;
 #X obj 8 45 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
@@ -2439,11 +2442,11 @@
 #X obj 94 427 list prepend;
 #X obj 163 401 list;
 #X obj 135 629 symbol;
-#X msg 181 702 ;
+#X msg 181 702;
 #X obj 346 627 symbol;
 #X obj 362 655 list prepend set;
 #X obj 362 679 list trim;
-#X msg 362 711  FGHFGHFGJFGHFGJFGHFGJFGJFGHJFGU;
+#X msg 362 711 FGHFGHFGJFGHFGJFGHFGJFGJFGHJFGU;
 #X msg 246 585 symbol;
 #X obj 599 292 list length;
 #X obj 597 313 - 1;
@@ -3386,9 +3389,9 @@ RGB \, type BYTE;
 #X obj 47 760 colorRGB;
 #X obj 47 837 accumrotate;
 #X obj 374 202 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 7000 1;
+-1 -1 0 1;
 #X obj 392 202 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 9400 1;
+-1 -1 0 1;
 #X obj 372 342 resample 50;
 #X obj 402 362 resample 50;
 #X obj 47 711 translateXYZ 0 0 -1;
@@ -3870,7 +3873,7 @@ RGB \, type BYTE;
 #X connect 170 2 171 0;
 #X connect 171 0 96 1;
 #X restore 34 222 pd winamp;
-#X obj 12 221 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 12 221 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #N canvas 648 201 837 780 control_screen_display 0;
 #X obj 58 81 metro 50;
