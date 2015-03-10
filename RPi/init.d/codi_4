@@ -1,4 +1,5 @@
 #! /bin/sh
+sudo killall pd
 sudo -u pi /home/pi/Corps_Diplomatique/RPi/midi2fudi.sh &
 /home/pi/Corps_Diplomatique/RPi/clavier.sh &
 
