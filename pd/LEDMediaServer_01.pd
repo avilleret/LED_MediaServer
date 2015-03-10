@@ -1,4 +1,4 @@
-#N canvas 43 717 371 338 10;
+#N canvas 54 621 371 338 10;
 #X declare -path ../osc;
 #X declare -path ../osc;
 #X declare -path ../osc;
@@ -2029,6 +2029,7 @@
 #X declare -path ../osc;
 #X declare -path ../osc;
 #X declare -path ../osc;
+#X declare -path ../osc;
 #N canvas 254 659 450 342 gemwin 0;
 #X msg 38 79 destroy;
 #X obj 38 57 sel 0 1;
@@ -3357,7 +3358,7 @@ RGB \, type BYTE;
 #X connect 18 0 12 0;
 #X connect 19 0 18 0;
 #X restore 28 44 pd init;
-#N canvas 549 148 1299 877 winamp 0;
+#N canvas 547 153 1299 877 winamp 0;
 #X obj 109 383 loadbang;
 #X obj 487 377 loadbang;
 #X obj 488 564 pix_texture;
@@ -3877,7 +3878,7 @@ RGB \, type BYTE;
 #X restore 34 222 pd winamp;
 #X obj 12 221 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#N canvas 646 206 837 780 control_screen_display 0;
+#N canvas 644 211 837 780 control_screen_display 0;
 #X obj 58 81 metro 50;
 #X obj 58 58 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
 ;
@@ -3988,7 +3989,7 @@ RGB \, type BYTE;
 #X restore 36 246 pd control_screen_display;
 #X obj 13 265 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#N canvas 950 755 450 300 test_afficheur 0;
+#N canvas 948 755 450 300 test_afficheur 0;
 #X obj 45 94 spigot 0;
 #X obj 45 126 circle 1;
 #X obj 171 30 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
@@ -4043,6 +4044,42 @@ RGB \, type BYTE;
 #X restore 98 223 pd winamp_on;
 #X obj 37 0 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
 ;
+#N canvas 456 511 572 478 control_video_hublo 0;
+#X obj 106 343 netsend -u;
+#X obj 176 218 metro 1000;
+#X obj 176 197 loadbang;
+#X obj 103 367 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 102 390 == 0;
+#X obj 176 264 spigot 1;
+#X obj 98 265 spigot 0;
+#X msg 252 280 connect 127.0.0.1 9010;
+#X msg 252 302 disconnect;
+#X msg 176 239 connect 10.42.0.33 9030;
+#X obj 105 48 oscparam /tutu;
+#X obj 95 166 list prepend send;
+#X obj 96 191 list trim;
+#X msg 129 85 fadein 1000;
+#X msg 144 106 fadeout 1000;
+#X msg 170 130 video video1.avi;
+#X connect 0 0 3 0;
+#X connect 1 0 9 0;
+#X connect 2 0 1 0;
+#X connect 3 0 4 0;
+#X connect 3 0 6 1;
+#X connect 4 0 5 1;
+#X connect 5 0 0 0;
+#X connect 6 0 0 0;
+#X connect 7 0 0 0;
+#X connect 8 0 0 0;
+#X connect 9 0 5 0;
+#X connect 10 0 11 0;
+#X connect 11 0 12 0;
+#X connect 12 0 6 0;
+#X connect 13 0 11 0;
+#X connect 14 0 11 0;
+#X connect 15 0 11 0;
+#X restore 38 294 pd control_video_hublo;
 #X connect 1 0 0 0;
 #X connect 4 0 5 0;
 #X connect 7 0 13 0;
