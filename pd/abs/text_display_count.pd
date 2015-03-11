@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #N canvas 79 102 1651 953 10;
+=======
+#N canvas 262 102 1651 953 10;
+>>>>>>> 75810ee99b6e45c42fb608df9c30ea1361e08746
 #X declare -path ../osc;
 #X declare -path ../osc;
 #X declare -path ../osc;
@@ -96,20 +100,36 @@
 #X obj 1388 453 oscparam /\$2/text/\$1/color/g;
 #X obj 1388 513 oscparam /\$2/text/\$1/color/b;
 #X obj 1388 573 oscparam /\$2/text/\$1/color/a;
+<<<<<<< HEAD
 #N canvas 1 119 450 300 pack 0;
 #X obj 144 237 pack 1 1 1 1;
 #X obj 162 136 t b f;
 #X obj 173 163 t b f;
 #X obj 332 193 t b f;
+=======
+#N canvas 143 387 569 423 pack 0;
+#X obj 144 237 pack 1 1 1 1;
+#X obj 162 136 t b f;
+#X obj 173 163 t b f;
+#X obj 238 193 t b f;
+>>>>>>> 75810ee99b6e45c42fb608df9c30ea1361e08746
 #X obj 144 259 outlet;
 #X obj 144 17 r \$0-color_r_out;
 #X obj 162 37 r \$0-color_g_out;
 #X obj 173 57 r \$0-color_b_out;
+<<<<<<< HEAD
 #X obj 332 26 r \$0-color_a_out;
 #X obj 332 136 f;
 #X obj 396 79 r \$2-blink;
 #X obj 396 105 t b f;
 #X obj 332 158 * 1;
+=======
+#X obj 321 27 r \$0-color_a_out;
+#X obj 394 57 r \$2-blink;
+#X obj 321 118 f;
+#X obj 393 87 t b f;
+#X obj 321 159 * 1;
+>>>>>>> 75810ee99b6e45c42fb608df9c30ea1361e08746
 #X connect 0 0 4 0;
 #X connect 1 0 0 0;
 #X connect 1 1 0 1;
@@ -120,10 +140,17 @@
 #X connect 5 0 0 0;
 #X connect 6 0 1 0;
 #X connect 7 0 2 0;
+<<<<<<< HEAD
 #X connect 8 0 9 0;
 #X connect 9 0 12 0;
 #X connect 10 0 11 0;
 #X connect 11 0 9 0;
+=======
+#X connect 8 0 10 0;
+#X connect 9 0 11 0;
+#X connect 10 0 12 0;
+#X connect 11 0 12 0;
+>>>>>>> 75810ee99b6e45c42fb608df9c30ea1361e08746
 #X connect 11 1 12 1;
 #X connect 12 0 3 0;
 #X restore 314 244 pd pack;
