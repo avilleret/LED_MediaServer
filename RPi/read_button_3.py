@@ -4,7 +4,7 @@ import time
 import RPi.GPIO as GPIO
 import OSC
 
-
+loop=0
 GPIO.setmode(GPIO.BCM)
 
 pinGreen=22
@@ -21,6 +21,18 @@ client = OSC.OSCClient()
 client.connect( ('10.42.0.1', 9008) )
 
 while True:
+        loop += 1
+        if (loop > 50000):
+		loop = 0
+		try:
+			msgBang = OSC.OSCMessage()
+			msgBang.setAddress("/ping")
+			msgBang.append("bang")
+			client.send(msgBang)
+		#print("top")
+		except:
+			print("osc pb")
+
         tmpGreen = (GPIO.input(pinGreen) == 0 )
         tmpRed = (GPIO.input(pinRed) == 0 )
 	if ( tmpGreen != btnGreen ):
