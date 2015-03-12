@@ -1,4 +1,4 @@
-#N canvas 653 208 371 338 10;
+#N canvas 651 241 371 338 10;
 #X declare -path ../osc;
 #X declare -path ../osc;
 #X declare -path ../osc;
@@ -3233,7 +3233,7 @@
 #X obj 1022 253 delay 200;
 #X msg 1022 283 1;
 #X msg 958 280 0;
-#X obj 958 201 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 958 201 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 958 65 oscparam /compteur/blink;
 #X obj 992 94 oscparam /compteur/blink_time;
@@ -3496,7 +3496,7 @@ RGB \, type BYTE;
 #X connect 18 0 12 0;
 #X connect 19 0 18 0;
 #X restore 28 44 pd init;
-#N canvas 547 153 1299 877 winamp 0;
+#N canvas 545 158 1299 877 winamp 0;
 #X obj 109 383 loadbang;
 #X obj 487 377 loadbang;
 #X obj 488 564 pix_texture;
@@ -3850,6 +3850,8 @@ RGB \, type BYTE;
 #X connect 23 0 18 0;
 #X connect 24 0 36 0;
 #X connect 25 0 26 0;
+#X connect 25 0 14 0;
+#X connect 25 0 12 0;
 #X connect 26 0 27 0;
 #X connect 27 0 28 0;
 #X connect 27 0 154 4;
@@ -4033,7 +4035,7 @@ RGB \, type BYTE;
 #X obj 58 752 netsend -u;
 #X obj 136 634 metro 1000;
 #X obj 136 613 loadbang;
-#X obj 58 776 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 58 776 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 58 799 == 0;
 #X obj 136 680 spigot 1;
@@ -4185,7 +4187,7 @@ RGB \, type BYTE;
 #N canvas 485 275 1190 746 control_video_hublo 0;
 #X obj 221 504 metro 1000;
 #X obj 221 483 loadbang;
-#X obj 143 655 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 143 655 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 143 676 == 0;
 #X obj 221 550 spigot 1;
