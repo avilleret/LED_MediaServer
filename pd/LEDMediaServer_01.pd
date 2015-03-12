@@ -1,4 +1,4 @@
-#N canvas 649 274 371 338 10;
+#N canvas 114 594 371 338 10;
 #X declare -path ../osc;
 #X declare -path ../osc;
 #X declare -path ../osc;
@@ -2324,7 +2324,7 @@
 #X connect 27 0 26 0;
 #X connect 28 0 20 0;
 #X restore 92 22 pd PixelPusherOSC;
-#N canvas 653 545 418 510 OSC 0;
+#N canvas 651 545 418 510 OSC 0;
 #X obj 41 413 s from_i-score;
 #X obj 252 38 r to_i-score;
 #X obj 195 158 loadbang;
@@ -2664,7 +2664,7 @@
 #X connect 11 0 10 1;
 #X restore 13 171 pd camera;
 #X obj 8 145 midi-remote;
-#N canvas 335 412 1272 643 compteur 0;
+#N canvas 333 412 1272 643 compteur 0;
 #X obj 197 18 loadbang;
 #X obj 94 38 t a a;
 #X obj 121 120 translateXYZ 0 0 -4;
@@ -2678,7 +2678,7 @@
 #X obj 221 72 s compteur-framebuffer;
 #X obj 148 165 s render_video_compteur;
 #X obj 121 185 s render_text_compteur;
-#N canvas 63 180 1651 875 compteur-de-temps 0;
+#N canvas 191 495 1651 875 compteur-de-temps 0;
 #X obj 980 554 s from_i-score;
 #X obj 752 666 s from_i-score;
 #X text 1065 463 minutes;
