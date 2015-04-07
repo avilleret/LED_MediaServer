@@ -1,0 +1,6 @@
+echo "/home/pi/Corps_Diplomatique/RPi/bin/pd-0.46-4/bin/pd &" | pdsend 9020 10.42.0.31  udp
+
+echo "leafpad &" | pdsend 9020 10.42.0.31  udp
+
+echo "lxterminal &" | pdsend 9020 10.42.0.31  udp
+

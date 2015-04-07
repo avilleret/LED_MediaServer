@@ -1,0 +1,4 @@
+sudo rm /etc/mtab
+sudo ln -s /proc/self/mounts /etc/mtab
+
+sudo apt-get install xdotool

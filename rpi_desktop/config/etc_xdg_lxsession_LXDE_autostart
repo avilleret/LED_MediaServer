@@ -1,0 +1,3 @@
+@lxpanel --profile LXDE
+@pcmanfm --desktop --profile LXDE
+@/home/pi/Corps_Diplomatique/rpi_desktop/autostart.sh

@@ -1,0 +1,17 @@
+#N canvas 300 686 717 300 10;
+#X obj 212 80 netreceive -u -b 9977;
+#X obj 212 100 list tosymbol;
+#X obj 212 160 list prepend set;
+#X obj 212 182 list trim;
+#X obj 212 249 outlet;
+#X obj 212 125 s2l;
+#X msg 212 226 /banniere/video_player/1/color/b 0.598425;
+#X obj 212 203 t b a;
+#X connect 0 0 1 0;
+#X connect 1 0 5 0;
+#X connect 2 0 3 0;
+#X connect 3 0 7 0;
+#X connect 5 0 2 0;
+#X connect 6 0 4 0;
+#X connect 7 0 6 0;
+#X connect 7 1 6 0;

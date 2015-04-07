@@ -1,0 +1,10 @@
+proc            /proc           proc    defaults          0       0
+/dev/mmcblk0p1  /boot           vfat    defaults,ro,noatime,errors=remount-ro     0       2
+/dev/mmcblk0p2  /               ext4    defaults,ro,noatime,errors=remount-ro	  0       1
+/dev/mmcblk0p3  /home/pi        ext4    defaults,noatime	  0       1
+#tmpfs		/tmp		tmpfs	defaults	  0	  0
+tmpfs           /tmp            tmpfs   nodev,nosuid,size=30M,mode=1777    0    0
+tmpfs           /var/log        tmpfs   nodev,nosuid,size=30M,mode=1777    0    0
+
+# a swapfile is not a swap partition, so no using swapon|off from here on, use  dphys-swapfile swap[on|off]  for that
+
