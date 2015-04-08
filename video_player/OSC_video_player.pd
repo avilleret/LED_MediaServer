@@ -1,4 +1,4 @@
-#N canvas 148 133 1130 872 10;
+#N canvas 21 404 1130 872 10;
 #X obj 16 134 gemhead;
 #X obj 16 190 gemframebuffer;
 #X obj 774 62 loadbang;
@@ -148,7 +148,7 @@
 #X obj 314 721 r init;
 #X obj 343 743 r scale_transition;
 #X obj 549 370 spigot 0;
-#X obj 608 372 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 608 372 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 554 742 r scale_act3;
 #X obj 767 746 r scale_act2;
@@ -179,6 +179,9 @@
 #X obj 31 35 loadbang;
 #X obj 13 107 gemwin 30;
 #X msg 244 150 360 900;
+#X floatatom 632 472 5 0 0 0 - - -, f 5;
+#X msg 439 505 repeat 0;
+#X obj 439 484 loadbang;
 #X connect 0 0 1 0;
 #X connect 1 0 3 0;
 #X connect 1 1 18 0;
@@ -339,3 +342,6 @@
 #X connect 149 0 151 0;
 #X connect 150 0 149 0;
 #X connect 152 0 16 0;
+#X connect 153 0 29 1;
+#X connect 154 0 23 0;
+#X connect 155 0 154 0;
