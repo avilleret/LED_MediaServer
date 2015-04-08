@@ -1,4 +1,4 @@
-#N canvas 150 128 1130 872 10;
+#N canvas 148 133 1130 872 10;
 #X obj 16 134 gemhead;
 #X obj 16 190 gemframebuffer;
 #X obj 774 62 loadbang;
@@ -177,8 +177,8 @@
 #X msg 31 55 dimen 1080 1080 \, offset 420 0 \, border 0 \, create
 \, 1;
 #X obj 31 35 loadbang;
-#X obj 13 107 gemwin 50;
-#X msg 244 150 360 1500;
+#X obj 13 107 gemwin 30;
+#X msg 244 150 360 900;
 #X connect 0 0 1 0;
 #X connect 1 0 3 0;
 #X connect 1 1 18 0;
