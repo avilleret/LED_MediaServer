@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rpt="http://openoffice.org/2005/report" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.text">
- <office:meta><meta:initial-creator>antoine </meta:initial-creator><meta:creation-date>2014-12-17T19:22:07.372133132</meta:creation-date><dc:date>2015-04-15T09:45:22.726745706</dc:date><meta:editing-duration>PT4H15M49S</meta:editing-duration><meta:editing-cycles>39</meta:editing-cycles><meta:generator>LibreOffice/4.2.7.2$Linux_X86_64 LibreOffice_project/420m0$Build-2</meta:generator><dc:creator>chnry </dc:creator><meta:document-statistic meta:table-count="1" meta:image-count="0" meta:object-count="0" meta:page-count="3" meta:paragraph-count="99" meta:word-count="577" meta:character-count="3589" meta:non-whitespace-character-count="3102"/></office:meta>
+ <office:meta><meta:initial-creator>antoine </meta:initial-creator><meta:creation-date>2014-12-17T19:22:07.372133132</meta:creation-date><dc:date>2015-04-15T12:21:29.282013850</dc:date><meta:editing-duration>PT5H31M9S</meta:editing-duration><meta:editing-cycles>43</meta:editing-cycles><meta:generator>LibreOffice/4.2.7.2$Linux_X86_64 LibreOffice_project/420m0$Build-2</meta:generator><dc:creator>chnry </dc:creator><meta:document-statistic meta:table-count="1" meta:image-count="0" meta:object-count="0" meta:page-count="4" meta:paragraph-count="128" meta:word-count="831" meta:character-count="5042" meta:non-whitespace-character-count="4320"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
-   <config:config-item config:name="ViewAreaTop" config:type="long">30949</config:config-item>
+   <config:config-item config:name="ViewAreaTop" config:type="long">87738</config:config-item>
    <config:config-item config:name="ViewAreaLeft" config:type="long">0</config:config-item>
-   <config:config-item config:name="ViewAreaWidth" config:type="long">45221</config:config-item>
-   <config:config-item config:name="ViewAreaHeight" config:type="long">19389</config:config-item>
+   <config:config-item config:name="ViewAreaWidth" config:type="long">41453</config:config-item>
+   <config:config-item config:name="ViewAreaHeight" config:type="long">17773</config:config-item>
    <config:config-item config:name="ShowRedlineChanges" config:type="boolean">true</config:config-item>
    <config:config-item config:name="InBrowseMode" config:type="boolean">false</config:config-item>
    <config:config-item-map-indexed config:name="Views">
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
-     <config:config-item config:name="ViewLeft" config:type="long">37989</config:config-item>
-     <config:config-item config:name="ViewTop" config:type="long">4586</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">13885</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">97843</config:config-item>
      <config:config-item config:name="VisibleLeft" config:type="long">0</config:config-item>
-     <config:config-item config:name="VisibleTop" config:type="long">30949</config:config-item>
-     <config:config-item config:name="VisibleRight" config:type="long">45219</config:config-item>
-     <config:config-item config:name="VisibleBottom" config:type="long">50336</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="long">87738</config:config-item>
+     <config:config-item config:name="VisibleRight" config:type="long">41451</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">105509</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
      <config:config-item config:name="ViewLayoutColumns" config:type="short">0</config:config-item>
      <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
-     <config:config-item config:name="ZoomFactor" config:type="short">110</config:config-item>
+     <config:config-item config:name="ZoomFactor" config:type="short">120</config:config-item>
      <config:config-item config:name="IsSelectedFrame" config:type="boolean">false</config:config-item>
     </config:config-item-map-entry>
    </config:config-item-map-indexed>
@@ -81,7 +81,7 @@
    <config:config-item config:name="ConsiderTextWrapOnObjPos" config:type="boolean">false</config:config-item>
    <config:config-item config:name="CurrentDatabaseCommandType" config:type="int">0</config:config-item>
    <config:config-item config:name="RedlineProtectionKey" config:type="base64Binary"/>
-   <config:config-item config:name="Rsid" config:type="int">2814043</config:config-item>
+   <config:config-item config:name="Rsid" config:type="int">3055073</config:config-item>
    <config:config-item config:name="PrintProspectRTL" config:type="boolean">false</config:config-item>
    <config:config-item config:name="PrinterSetup" config:type="base64Binary"/>
    <config:config-item config:name="AlignTabStopPosition" config:type="boolean">true</config:config-item>
@@ -306,103 +306,130 @@
   <style:style style:name="P9" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties officeooo:rsid="002a0aee" officeooo:paragraph-rsid="002a0aee"/>
   </style:style>
-  <style:style style:name="P10" style:family="paragraph" style:parent-style-name="Title">
+  <style:style style:name="P10" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:rsid="002af05b" officeooo:paragraph-rsid="002af05b"/>
+  </style:style>
+  <style:style style:name="P11" style:family="paragraph" style:parent-style-name="Title">
    <style:text-properties officeooo:rsid="001696bd" officeooo:paragraph-rsid="001696bd"/>
   </style:style>
-  <style:style style:name="P11" style:family="paragraph" style:parent-style-name="Subtitle">
-   <style:text-properties officeooo:rsid="001696bd" officeooo:paragraph-rsid="001696bd"/>
-  </style:style>
-  <style:style style:name="P12" style:family="paragraph" style:parent-style-name="Heading_20_1">
+  <style:style style:name="P12" style:family="paragraph" style:parent-style-name="Subtitle">
    <style:text-properties officeooo:rsid="001696bd" officeooo:paragraph-rsid="001696bd"/>
   </style:style>
   <style:style style:name="P13" style:family="paragraph" style:parent-style-name="Heading_20_1">
+   <style:text-properties officeooo:rsid="001696bd" officeooo:paragraph-rsid="001696bd"/>
+  </style:style>
+  <style:style style:name="P14" style:family="paragraph" style:parent-style-name="Heading_20_1">
    <style:text-properties officeooo:rsid="0023c2a7" officeooo:paragraph-rsid="0028accf"/>
   </style:style>
-  <style:style style:name="P14" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:text-properties officeooo:rsid="001696bd" officeooo:paragraph-rsid="001696bd"/>
-  </style:style>
-  <style:style style:name="P15" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:text-properties officeooo:rsid="001696bd" officeooo:paragraph-rsid="002681b3"/>
+  <style:style style:name="P15" style:family="paragraph" style:parent-style-name="Heading_20_1">
+   <style:text-properties officeooo:rsid="0028accf" officeooo:paragraph-rsid="0028accf"/>
   </style:style>
   <style:style style:name="P16" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:text-properties officeooo:rsid="0017c5f8" officeooo:paragraph-rsid="0017c5f8"/>
-  </style:style>
-  <style:style style:name="P17" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:text-properties officeooo:rsid="0017c5f8" officeooo:paragraph-rsid="002681b3"/>
-  </style:style>
-  <style:style style:name="P18" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:text-properties officeooo:rsid="001ac56d" officeooo:paragraph-rsid="001ac56d"/>
-  </style:style>
-  <style:style style:name="P19" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:text-properties officeooo:rsid="001b3804" officeooo:paragraph-rsid="001b3804"/>
-  </style:style>
-  <style:style style:name="P20" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:text-properties officeooo:rsid="001d0ee2" officeooo:paragraph-rsid="001d0ee2"/>
-  </style:style>
-  <style:style style:name="P21" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:text-properties officeooo:rsid="001d0ee2" officeooo:paragraph-rsid="001e9c0f"/>
-  </style:style>
-  <style:style style:name="P22" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:text-properties officeooo:rsid="001e9c0f" officeooo:paragraph-rsid="001e9c0f"/>
-  </style:style>
-  <style:style style:name="P23" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:text-properties officeooo:rsid="001e9c0f" officeooo:paragraph-rsid="001f66fd"/>
-  </style:style>
-  <style:style style:name="P24" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:text-properties officeooo:rsid="001e9c0f" officeooo:paragraph-rsid="0017c5f8"/>
-  </style:style>
-  <style:style style:name="P25" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:text-properties officeooo:rsid="001e9c0f" officeooo:paragraph-rsid="002681b3"/>
-  </style:style>
-  <style:style style:name="P26" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:text-properties officeooo:rsid="001ffe40" officeooo:paragraph-rsid="001ffe40"/>
-  </style:style>
-  <style:style style:name="P27" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:text-properties officeooo:rsid="0020fa19" officeooo:paragraph-rsid="0020fa19"/>
-  </style:style>
-  <style:style style:name="P28" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:text-properties officeooo:rsid="002194ad" officeooo:paragraph-rsid="002194ad"/>
-  </style:style>
-  <style:style style:name="P29" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:text-properties officeooo:rsid="00241c1e" officeooo:paragraph-rsid="00241c1e"/>
-  </style:style>
-  <style:style style:name="P30" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:text-properties officeooo:rsid="00250b4c" officeooo:paragraph-rsid="00250b4c"/>
-  </style:style>
-  <style:style style:name="P31" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:text-properties officeooo:rsid="00255fca" officeooo:paragraph-rsid="00255fca"/>
-  </style:style>
-  <style:style style:name="P32" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:text-properties officeooo:rsid="00255fca" officeooo:paragraph-rsid="001696bd"/>
-  </style:style>
-  <style:style style:name="P33" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:text-properties officeooo:rsid="00255fca" officeooo:paragraph-rsid="002681b3"/>
-  </style:style>
-  <style:style style:name="P34" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:text-properties officeooo:rsid="002681b3" officeooo:paragraph-rsid="002681b3"/>
-  </style:style>
-  <style:style style:name="P35" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:text-properties officeooo:rsid="001e9c0f" officeooo:paragraph-rsid="001e9c0f" fo:background-color="#ff0000"/>
-  </style:style>
-  <style:style style:name="P36" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:text-properties officeooo:rsid="001e9c0f" officeooo:paragraph-rsid="001f66fd" fo:background-color="#ff0000"/>
-  </style:style>
-  <style:style style:name="P37" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:text-properties officeooo:rsid="001e9c0f" officeooo:paragraph-rsid="001e9c0f" fo:background-color="transparent"/>
-  </style:style>
-  <style:style style:name="P38" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:text-properties officeooo:rsid="002a0aee" officeooo:paragraph-rsid="002a0aee"/>
-  </style:style>
-  <style:style style:name="P39" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="002a0aee" officeooo:paragraph-rsid="002a0aee"/>
-  </style:style>
-  <style:style style:name="P40" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="002af05b" officeooo:paragraph-rsid="002af05b"/>
-  </style:style>
-  <style:style style:name="P41" style:family="paragraph" style:parent-style-name="Heading_20_1">
    <style:text-properties officeooo:rsid="001696bd" officeooo:paragraph-rsid="001696bd"/>
   </style:style>
-  <style:style style:name="P42" style:family="paragraph" style:parent-style-name="Heading_20_1">
+  <style:style style:name="P17" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:text-properties officeooo:rsid="001696bd" officeooo:paragraph-rsid="002681b3"/>
+  </style:style>
+  <style:style style:name="P18" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:text-properties officeooo:rsid="0017c5f8" officeooo:paragraph-rsid="0017c5f8"/>
+  </style:style>
+  <style:style style:name="P19" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:text-properties officeooo:rsid="0017c5f8" officeooo:paragraph-rsid="002681b3"/>
+  </style:style>
+  <style:style style:name="P20" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:text-properties officeooo:rsid="001ac56d" officeooo:paragraph-rsid="001ac56d"/>
+  </style:style>
+  <style:style style:name="P21" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:text-properties officeooo:rsid="001b3804" officeooo:paragraph-rsid="001b3804"/>
+  </style:style>
+  <style:style style:name="P22" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:text-properties officeooo:rsid="001d0ee2" officeooo:paragraph-rsid="001d0ee2"/>
+  </style:style>
+  <style:style style:name="P23" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:text-properties officeooo:rsid="001d0ee2" officeooo:paragraph-rsid="001e9c0f"/>
+  </style:style>
+  <style:style style:name="P24" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:text-properties officeooo:rsid="001e9c0f" officeooo:paragraph-rsid="001e9c0f"/>
+  </style:style>
+  <style:style style:name="P25" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:text-properties officeooo:rsid="001e9c0f" officeooo:paragraph-rsid="001f66fd"/>
+  </style:style>
+  <style:style style:name="P26" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:text-properties officeooo:rsid="001e9c0f" officeooo:paragraph-rsid="0017c5f8"/>
+  </style:style>
+  <style:style style:name="P27" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:text-properties officeooo:rsid="001e9c0f" officeooo:paragraph-rsid="002681b3"/>
+  </style:style>
+  <style:style style:name="P28" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:text-properties officeooo:rsid="001ffe40" officeooo:paragraph-rsid="001ffe40"/>
+  </style:style>
+  <style:style style:name="P29" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:text-properties officeooo:rsid="0020fa19" officeooo:paragraph-rsid="0020fa19"/>
+  </style:style>
+  <style:style style:name="P30" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:text-properties officeooo:rsid="002194ad" officeooo:paragraph-rsid="002194ad"/>
+  </style:style>
+  <style:style style:name="P31" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:text-properties officeooo:rsid="00241c1e" officeooo:paragraph-rsid="00241c1e"/>
+  </style:style>
+  <style:style style:name="P32" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:text-properties officeooo:rsid="00250b4c" officeooo:paragraph-rsid="00250b4c"/>
+  </style:style>
+  <style:style style:name="P33" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:text-properties officeooo:rsid="00255fca" officeooo:paragraph-rsid="00255fca"/>
+  </style:style>
+  <style:style style:name="P34" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:text-properties officeooo:rsid="00255fca" officeooo:paragraph-rsid="001696bd"/>
+  </style:style>
+  <style:style style:name="P35" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:text-properties officeooo:rsid="00255fca" officeooo:paragraph-rsid="002681b3"/>
+  </style:style>
+  <style:style style:name="P36" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:text-properties officeooo:rsid="002681b3" officeooo:paragraph-rsid="002681b3"/>
+  </style:style>
+  <style:style style:name="P37" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:text-properties officeooo:rsid="001e9c0f" officeooo:paragraph-rsid="001e9c0f" fo:background-color="#ff0000"/>
+  </style:style>
+  <style:style style:name="P38" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:text-properties officeooo:rsid="001e9c0f" officeooo:paragraph-rsid="001f66fd" fo:background-color="#ff0000"/>
+  </style:style>
+  <style:style style:name="P39" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:text-properties officeooo:rsid="001e9c0f" officeooo:paragraph-rsid="001e9c0f" fo:background-color="transparent"/>
+  </style:style>
+  <style:style style:name="P40" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:text-properties officeooo:rsid="002a0aee" officeooo:paragraph-rsid="002a0aee"/>
+  </style:style>
+  <style:style style:name="P41" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:rsid="002bfd62" officeooo:paragraph-rsid="002bfd62"/>
+  </style:style>
+  <style:style style:name="P42" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:rsid="001b1edd" officeooo:paragraph-rsid="002bfd62"/>
+  </style:style>
+  <style:style style:name="P43" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:rsid="001b1edd" officeooo:paragraph-rsid="001b1edd"/>
+  </style:style>
+  <style:style style:name="P44" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:rsid="002caa08" officeooo:paragraph-rsid="002caa08"/>
+  </style:style>
+  <style:style style:name="P45" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:rsid="002e4060" officeooo:paragraph-rsid="002e4060"/>
+  </style:style>
+  <style:style style:name="P46" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:rsid="0028accf" officeooo:paragraph-rsid="0028accf"/>
+  </style:style>
+  <style:style style:name="P47" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:rsid="002e9de1" officeooo:paragraph-rsid="002e9de1"/>
+  </style:style>
+  <style:style style:name="P48" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:text-properties officeooo:rsid="002e9de1" officeooo:paragraph-rsid="002e9de1"/>
+  </style:style>
+  <style:style style:name="P49" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:text-properties officeooo:rsid="001e9c0f" officeooo:paragraph-rsid="001e9c0f"/>
+  </style:style>
+  <style:style style:name="P50" style:family="paragraph" style:parent-style-name="Heading_20_1">
+   <style:text-properties officeooo:rsid="001696bd" officeooo:paragraph-rsid="001696bd"/>
+  </style:style>
+  <style:style style:name="P51" style:family="paragraph" style:parent-style-name="Heading_20_1">
    <style:text-properties officeooo:rsid="0028accf" officeooo:paragraph-rsid="0028accf"/>
   </style:style>
   <style:style style:name="T1" style:family="text">
@@ -456,6 +483,18 @@
   <style:style style:name="T17" style:family="text">
    <style:text-properties officeooo:rsid="002af05b"/>
   </style:style>
+  <style:style style:name="T18" style:family="text">
+   <style:text-properties officeooo:rsid="002bfd62"/>
+  </style:style>
+  <style:style style:name="T19" style:family="text">
+   <style:text-properties officeooo:rsid="002caa08"/>
+  </style:style>
+  <style:style style:name="T20" style:family="text">
+   <style:text-properties officeooo:rsid="002e4060"/>
+  </style:style>
+  <style:style style:name="T21" style:family="text">
+   <style:text-properties officeooo:rsid="002e9de1"/>
+  </style:style>
   <style:page-layout style:name="pm1">
    <style:page-layout-properties fo:page-width="21.001cm" fo:page-height="29.7cm" style:num-format="1" style:print-orientation="portrait" fo:margin-top="2cm" fo:margin-bottom="2cm" fo:margin-left="2cm" fo:margin-right="2cm" style:writing-mode="lr-tb" style:footnote-max-height="0cm">
     <style:footnote-sep style:width="0.018cm" style:distance-before-sep="0.101cm" style:distance-after-sep="0.101cm" style:line-style="solid" style:adjustment="left" style:rel-width="25%" style:color="#000000"/>
@@ -475,9 +514,9 @@
     <text:sequence-decl text:display-outline-level="0" text:name="Text"/>
     <text:sequence-decl text:display-outline-level="0" text:name="Drawing"/>
    </text:sequence-decls>
-   <text:p text:style-name="P10">Corps Diplomatique</text:p>
-   <text:p text:style-name="P11">Fiche technique</text:p>
-   <text:h text:style-name="P12" text:outline-level="1">Architecture réseau</text:h>
+   <text:p text:style-name="P11">Corps Diplomatique</text:p>
+   <text:p text:style-name="P12">Fiche technique</text:p>
+   <text:h text:style-name="P13" text:outline-level="1">Architecture réseau</text:h>
    <table:table table:name="Tableau1" table:style-name="Tableau1">
     <table:table-column table:style-name="Tableau1.A"/>
     <table:table-column table:style-name="Tableau1.B"/>
@@ -485,70 +524,70 @@
     <table:table-column table:style-name="Tableau1.D"/>
     <table:table-row>
      <table:table-cell table:style-name="Tableau1.A1" office:value-type="string">
-      <text:p text:style-name="P14">Quoi</text:p>
+      <text:p text:style-name="P16">Quoi</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.A1" office:value-type="string">
-      <text:p text:style-name="P14">Device</text:p>
+      <text:p text:style-name="P16">Device</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.A1" office:value-type="string">
-      <text:p text:style-name="P14">IP</text:p>
+      <text:p text:style-name="P16">IP</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.D1" office:value-type="string">
-      <text:p text:style-name="P14">Login / mot de passe</text:p>
+      <text:p text:style-name="P16">Login / mot de passe</text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P14">LedMediaServer</text:p>
+      <text:p text:style-name="P48">tutu</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P14">MacMini / ubuntu</text:p>
+      <text:p text:style-name="P16">MacMini / ubuntu</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P14">10.42.0.<text:span text:style-name="T3">10</text:span></text:p>
+      <text:p text:style-name="P16">10.42.0.<text:span text:style-name="T3">10</text:span></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.D2" office:value-type="string">
-      <text:p text:style-name="P16">halory / halory</text:p>
+      <text:p text:style-name="P18">halory / halory</text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P16">Son</text:p>
+      <text:p text:style-name="P48">pioneer</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P18">Mac<text:span text:style-name="T16">book</text:span> / 0S X 10.10</text:p>
+      <text:p text:style-name="P20">Mac<text:span text:style-name="T16">book</text:span> / 0S X 10.10</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P16">10.42.0.<text:span text:style-name="T3">11</text:span></text:p>
+      <text:p text:style-name="P18">10.42.0.<text:span text:style-name="T3">11</text:span></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.D2" office:value-type="string">
-      <text:p text:style-name="P28">Pioneer / pioneer : ordi master global</text:p>
+      <text:p text:style-name="P30">Pioneer / pioneer : ordi master global</text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row table:style-name="Tableau1.4">
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P14">Compteur</text:p>
+      <text:p text:style-name="P16">Compteur</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P14">RaspberryPi</text:p>
-      <text:p text:style-name="P38">(SD 0)</text:p>
+      <text:p text:style-name="P16">RaspberryPi</text:p>
+      <text:p text:style-name="P40">(SD 0)</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P14">10.42.0.<text:span text:style-name="T2">2</text:span>0</text:p>
+      <text:p text:style-name="P16">10.42.0.<text:span text:style-name="T2">2</text:span>0</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.D2" office:value-type="string">
-      <text:p text:style-name="P14">pi / pi</text:p>
+      <text:p text:style-name="P16">pi / pi</text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row table:style-name="Tableau1.5">
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P14">Banière 1</text:p>
+      <text:p text:style-name="P16">Banière 1</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P14">PixelPusher</text:p>
+      <text:p text:style-name="P16">PixelPusher</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P14">10.42.0.21</text:p>
+      <text:p text:style-name="P16">10.42.0.21</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.D2" office:value-type="string">
       <text:p text:style-name="Table_20_Contents">console USB 115200 bd / <text:s/>framing is 8,n,1</text:p>
@@ -556,14 +595,14 @@
     </table:table-row>
     <table:table-row>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P14">Banière 2</text:p>
-      <text:p text:style-name="P31"/>
+      <text:p text:style-name="P16">Banière 2</text:p>
+      <text:p text:style-name="P33"/>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P14">PixelPusher</text:p>
+      <text:p text:style-name="P16">PixelPusher</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P14">10.42.0.23</text:p>
+      <text:p text:style-name="P16">10.42.0.23</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.D2" office:value-type="string">
       <text:p text:style-name="Table_20_Contents">console USB 115200 bd / <text:s/>framing is 8,n,1</text:p>
@@ -571,14 +610,14 @@
     </table:table-row>
     <table:table-row>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P14">Banière 3</text:p>
-      <text:p text:style-name="P31"/>
+      <text:p text:style-name="P16">Banière 3</text:p>
+      <text:p text:style-name="P33"/>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P14">PixelPusher</text:p>
+      <text:p text:style-name="P16">PixelPusher</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P14">10.42.0.25</text:p>
+      <text:p text:style-name="P16">10.42.0.25</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.D2" office:value-type="string">
       <text:p text:style-name="Table_20_Contents">console USB 115200 bd / <text:s/>framing is 8,n,1</text:p>
@@ -586,137 +625,168 @@
     </table:table-row>
     <table:table-row>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P34">Telecommande 3 : Gong <text:span text:style-name="T13">+ camera</text:span></text:p>
+      <text:p text:style-name="P36">Telecommande 3 : Gong</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P15">RaspberryPi</text:p>
-      <text:p text:style-name="P33">(SD <text:span text:style-name="T11">3</text:span>)</text:p>
+      <text:p text:style-name="P17">RaspberryPi</text:p>
+      <text:p text:style-name="P35">(SD <text:span text:style-name="T11">3</text:span>)</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P15">10.42.0.2<text:span text:style-name="T11">6</text:span></text:p>
+      <text:p text:style-name="P17">10.42.0.2<text:span text:style-name="T11">6</text:span></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.D2" office:value-type="string">
-      <text:p text:style-name="P17">pi / pi</text:p>
-      <text:p text:style-name="P25">communication sur 10.42.0.1<text:span text:style-name="T12">1</text:span> port 900<text:span text:style-name="T11">8</text:span></text:p>
+      <text:p text:style-name="P19">pi / pi</text:p>
+      <text:p text:style-name="P27">communication sur 10.42.0.1<text:span text:style-name="T12">1</text:span> port 900<text:span text:style-name="T11">8</text:span></text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P34">Telecommande 2</text:p>
+      <text:p text:style-name="P36">Telecommande 2 : <text:span text:style-name="T21">(banniere 2)</text:span></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P15">RaspberryPi</text:p>
-      <text:p text:style-name="P33">(SD 2)</text:p>
+      <text:p text:style-name="P17">RaspberryPi</text:p>
+      <text:p text:style-name="P35">(SD 2)</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P15">10.42.0.24</text:p>
+      <text:p text:style-name="P17">10.42.0.24</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.D2" office:value-type="string">
-      <text:p text:style-name="P17">pi / pi</text:p>
-      <text:p text:style-name="P25">communication sur 10.42.0.1<text:span text:style-name="T12">1</text:span> port 9007</text:p>
+      <text:p text:style-name="P19">pi / pi</text:p>
+      <text:p text:style-name="P27">communication sur 10.42.0.1<text:span text:style-name="T12">1</text:span> port 9007</text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P20">T<text:span text:style-name="T12">elecommande 1</text:span></text:p>
+      <text:p text:style-name="P22">T<text:span text:style-name="T12">elecommande 1 (banniere 1 + camera)</text:span></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P14">RaspberryPi</text:p>
-      <text:p text:style-name="P31">(SD <text:span text:style-name="T11">1</text:span>)</text:p>
+      <text:p text:style-name="P16">RaspberryPi</text:p>
+      <text:p text:style-name="P33">(SD <text:span text:style-name="T11">1</text:span>)</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P15">10.42.0.2<text:span text:style-name="T11">2</text:span></text:p>
+      <text:p text:style-name="P17">10.42.0.2<text:span text:style-name="T11">2</text:span></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.D2" office:value-type="string">
-      <text:p text:style-name="P17">pi / pi</text:p>
-      <text:p text:style-name="P25">communication sur 10.42.0.1<text:span text:style-name="T12">1</text:span> port 900<text:span text:style-name="T11">6</text:span></text:p>
+      <text:p text:style-name="P19">pi / pi</text:p>
+      <text:p text:style-name="P27">communication sur 10.42.0.1<text:span text:style-name="T12">1</text:span> port 900<text:span text:style-name="T11">6</text:span></text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P20">Passerelle midi plateau / régie</text:p>
-      <text:p text:style-name="P31"/>
+      <text:p text:style-name="P22">Passerelle midi plateau / régie</text:p>
+      <text:p text:style-name="P33"/>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P14">RaspberryPi</text:p>
-      <text:p text:style-name="P31">(SD 4)</text:p>
+      <text:p text:style-name="P16">RaspberryPi</text:p>
+      <text:p text:style-name="P33">(SD 4)</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P20">10.42.0.30</text:p>
+      <text:p text:style-name="P22">10.42.0.30</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.D2" office:value-type="string">
-      <text:p text:style-name="P21">pi / pi </text:p>
-      <text:p text:style-name="P37">communication sur 10.42.0.1<text:span text:style-name="T14">1</text:span> port 9010 <text:span text:style-name="T7">(midi)</text:span></text:p>
-      <text:p text:style-name="P22">communication sur 10.42.0.11 port 9011 <text:span text:style-name="T7">(clavier)</text:span></text:p>
+      <text:p text:style-name="P23">pi / pi </text:p>
+      <text:p text:style-name="P39">communication sur 10.42.0.1<text:span text:style-name="T14">1</text:span> port 9010 <text:span text:style-name="T7">(midi bcf)</text:span></text:p>
+      <text:p text:style-name="P24">communication sur 10.42.0.11 port 9011 <text:span text:style-name="T7">(clavier)</text:span></text:p>
+      <text:p text:style-name="P48">communication sur 10.42.0.10 port 9010 (midi bcf)</text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P27">Rpi plateau affichage ecran</text:p>
-      <text:p text:style-name="P31"/>
+      <text:p text:style-name="P29">Rpi plateau affichage ecran</text:p>
+      <text:p text:style-name="P33"/>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P14">RaspberryPi</text:p>
-      <text:p text:style-name="P31">(SD 5)</text:p>
+      <text:p text:style-name="P16">RaspberryPi</text:p>
+      <text:p text:style-name="P33">(SD 5)</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P27">10.42.0.31</text:p>
+      <text:p text:style-name="P29">10.42.0.31</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.D2" office:value-type="string">
-      <text:p text:style-name="P27">Pi / pi</text:p>
-      <text:p text:style-name="P27"><text:span text:style-name="T9">netreceive <text:s/></text:span>9020 <text:span text:style-name="T9">udp</text:span></text:p>
+      <text:p text:style-name="P29"><text:span text:style-name="T21">p</text:span>i / pi</text:p>
+      <text:p text:style-name="P29"><text:span text:style-name="T9">netreceive <text:s/></text:span>9020 <text:span text:style-name="T9">udp</text:span></text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P29">affichage hublot</text:p>
-      <text:p text:style-name="P30">(nicolas)</text:p>
+      <text:p text:style-name="P31">affichage hublot</text:p>
+      <text:p text:style-name="P32">(nicolas)</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P30">gygabyte</text:p>
+      <text:p text:style-name="P32">gygabyte</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.A2" office:value-type="string">
-      <text:p text:style-name="P29">10.42.0.32</text:p>
+      <text:p text:style-name="P31">10.42.0.32</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau1.D2" office:value-type="string">
-      <text:p text:style-name="P30">nusmuk / nusmuk</text:p>
-      <text:p text:style-name="P29"><text:span text:style-name="T10">n</text:span>etreceive 9030 udp</text:p>
+      <text:p text:style-name="P32">nusmuk / nusmuk</text:p>
+      <text:p text:style-name="P31"><text:span text:style-name="T10">n</text:span>etreceive 9030 udp</text:p>
      </table:table-cell>
     </table:table-row>
    </table:table>
    <text:p text:style-name="P2"/>
    <text:p text:style-name="P1">La bannière de spare n&apos;est pas adressée par défaut. Si une bannière est défecteuse, il faut récupérer la carte SD de la Raspberry Pi et la clé USB du PixelPusher pour les mettre dans la bannière de spare.</text:p>
-   <text:h text:style-name="Heading_20_1" text:outline-level="1">Distribution des ports</text:h>
+   <text:h text:style-name="Heading_20_1" text:outline-level="1"><text:soft-page-break/>Distribution des ports</text:h>
    <text:p text:style-name="P3">Les PixelPusher envoient leur signalement sur le port 7331 et reçoivent les images sur le port 9798.</text:p>
-   <text:p text:style-name="P4"><text:soft-page-break/>Le compteur se comporte comme un PixelPusher bien que ce soit une Raspberry Pi.</text:p>
+   <text:p text:style-name="P4">Le compteur se comporte comme un PixelPusher bien que ce soit une Raspberry Pi.</text:p>
    <text:p text:style-name="P3">Les boutons des banières envoient leur status <text:span text:style-name="T3">au LedMediaServer </text:span>via le port <text:span text:style-name="T3">9001,9002 et 9003.</text:span></text:p>
    <text:h text:style-name="Heading_20_1" text:outline-level="1">Configuration ordinateur de régie <text:span text:style-name="T15">(pioneer)</text:span></text:h>
-   <text:p text:style-name="P5">Outr<text:span text:style-name="T15">e</text:span> la configuration réseau qui doit être faite manuellement suivant le tableau ci-dessus. Il faut – of course – installer Live et Max4Live.</text:p>
-   <text:p text:style-name="P5">Les device M4L sont dans la Dropbox (pour l&apos;instant). Dans le dossier &quot;SHOW/CoDi-LiveSet Project/Preset/M4L Devices&quot;. <text:span text:style-name="T5">Il faut ajouter ce dossier aux searchs paths de Max</text:span> (Options → File Preferences) sans quoi, les presets de devices ne se chargeront pas correctement. Si le set Live est déplacé, il faut actualiser l&apos;emplacement dans Max.</text:p>
+   <text:p text:style-name="P44">C&apos;est la vraiment merde : tu dois tout réinstaller sur une nouvelle machine. Pas de panique on a pensé à tout.</text:p>
+   <text:p text:style-name="P44">D&apos;abord tu installe la dropbox et tu synchronise tout le dossier corps diplomatique<text:span text:style-name="T21">(c&apos;est surtout SHOW qui nous intéresse)</text:span>.</text:p>
+   <text:p text:style-name="P5"><text:span text:style-name="T19">Fais</text:span> la configuration réseau qui doit être faite manuellement suivant le tableau ci-dessus <text:span text:style-name="T21">(cf sauvegarde/screenshots)</text:span>.</text:p>
+   <text:p text:style-name="P44">Installe tout ce qui est dans db/show/sauvegarde/apps</text:p>
+   <text:p text:style-name="P44"><text:tab/>&gt; live 9 + M4L</text:p>
+   <text:p text:style-name="P44"><text:tab/>&gt; Bome Midi translator</text:p>
+   <text:p text:style-name="P44"><text:tab/>&gt; Pd</text:p>
+   <text:p text:style-name="P44"><text:tab/>&gt; drivers de la motu</text:p>
+   <text:p text:style-name="P44"><text:tab/>&gt; plugins wave</text:p>
+   <text:p text:style-name="P42">Les device M4L sont dans la Dropbox : SHOW/CoDi-LiveSet Project/Preset/M4L Devices&quot;. <text:span text:style-name="T5">Il faut ajouter ce dossier aux searchs paths de Max</text:span> (Options → File Preferences // <text:span text:style-name="T21">cf sauvegarde/screenshots</text:span>) sans quoi, les presets de devices ne se chargeront pas correctement. Si le set Live est déplacé, il faut actualiser l&apos;emplacement dans Max.<text:span text:style-name="T18">&#x0d;</text:span></text:p>
+   <text:p text:style-name="P44">Copie/colle le contenu de db/show/sauvegarde/Pioneer_documents dans le dossier « documents » de ta nouvelle machine</text:p>
+   <text:p text:style-name="P44">Dans capture d&apos;écran tu as les réglages des préférences Live.</text:p>
+   <text:p text:style-name="P44">Dans Applications/utilitaire/configuration audio et midi</text:p>
+   <text:p text:style-name="P44"><text:tab/>&gt; studio MIDI &gt; gestionnaire IAC</text:p>
+   <text:p text:style-name="P44">Là tu créé <text:span text:style-name="T20">4</text:span> ports IAC <text:span text:style-name="T21">et tu les nomme comme suit :</text:span></text:p>
+   <text:p text:style-name="P44"><text:tab/>&gt; pd to live</text:p>
+   <text:p text:style-name="P44"><text:tab/>&gt; live to bome</text:p>
+   <text:p text:style-name="P44"><text:tab/>&gt; bome to live</text:p>
+   <text:p text:style-name="P44"><text:tab/><text:span text:style-name="T20">&gt; live to live</text:span></text:p>
+   <text:p text:style-name="P42"/>
+   <text:p text:style-name="P41"><text:soft-page-break/>Installer <text:span text:style-name="T19">Bome : copie/colle l&apos;appli depuis DB/SHOW/SAUVEGARDE PIONEER/APPS</text:span></text:p>
+   <text:p text:style-name="P42"/>
    <text:p text:style-name="P5"/>
    <text:p text:style-name="P6">github pioneer : </text:p>
    <text:p text:style-name="P6">login amicaledeproduction / amicale1</text:p>
-   <text:h text:style-name="P42" text:outline-level="1">Restauration d&apos;une rasperry pi</text:h>
+   <text:h text:style-name="P15" text:outline-level="1">Restauration d&apos;une rasperry pi</text:h>
    <text:p text:style-name="P7">En cas de problème avec une carte SD d&apos;une raspberry , il peu être nécessaire de la réinstaller complètement.</text:p>
-   <text:p text:style-name="P7">Les iso de chaques caretes SD sont disponible ds tutu et dans dans nicolas.</text:p>
+   <text:p text:style-name="P7">Les iso de chaques cartes SD sont disponible ds tutu et dans dans nicolas.</text:p>
+   <text:p text:style-name="P47">Dans tutu : Saved/</text:p>
+   <text:p text:style-name="P47">dans Nicolas : sur la partition du disque qui n&apos;est pas montée</text:p>
    <text:p text:style-name="P7">Pour les restaurer, suivre le tutorial d&apos;installation des raspberry : <text:s/>https://www.raspberrypi.org/documentation/installation/installing-images/linux.md</text:p>
-   <text:p text:style-name="P7">en gros la commande impotante est un truc du genre :</text:p>
+   <text:p text:style-name="P7">en gros la commande impo<text:span text:style-name="T21">r</text:span>tante est un truc du genre :</text:p>
    <text:p text:style-name="P7">dd bs=<text:span text:style-name="T17">1</text:span>M if=codi_RP1.iso <text:span text:style-name="T17">of</text:span>=/dev/sdf</text:p>
    <text:p text:style-name="P7">en remplacant le f de sdf par la lettre correspondante au lecteur SD, et le codi_RP1.iso par la bonne image.</text:p>
    <text:h text:style-name="Heading_20_1" text:outline-level="1">Restauration d&apos;un pixel pusher</text:h>
-   <text:p text:style-name="P7">??</text:p>
+   <text:p text:style-name="P41">Alors là il faut copier sur une clef usb le script de la bannière à restaurer.</text:p>
+   <text:p text:style-name="P41">Dans tutu : Corps_Diplomatique/pixelpusher/config_files/bannieres 1, 2 ou 3.</text:p>
+   <text:p text:style-name="P41">Tu chope le pixel.rc et tu le copie sur une clef vierge.</text:p>
+   <text:p text:style-name="P45">Brancher la cle sur le pxel pusher correspondant et ca joue...</text:p>
    <text:h text:style-name="Heading_20_1" text:outline-level="1">Restauration de tutu</text:h>
    <text:p text:style-name="P7">???</text:p>
    <text:h text:style-name="Heading_20_1" text:outline-level="1"><text:span text:style-name="T15">Restauration</text:span> de nicolas</text:h>
-   <text:p text:style-name="P9">A l&apos;aide de l&apos;outils « creatieur de disque de demarage » disponible sous ubuntu, créer une cle usb bootable a partir de l&apos;iso « nusmuk ». booter dessus depuis nicolas (si nicolas refuse de booter sur la cle usb, mettre le DD ds une autre machine).</text:p>
-   <text:p text:style-name="P9"><text:soft-page-break/>Booter sur la cle, installer le systeme sur la premiere partition (la plus petite, ne pas toucher a la partition de sauvegarde), redemarer.</text:p>
-   <text:p text:style-name="P9">Suprimier le repertoir « miguel » du home, copier le « repertoir corps diplomatique » de la partitionde sauvegarde ds le home.</text:p>
-   <text:p text:style-name="P9">Ds un terminal, cd corps_diplomatique et git pull afin de faire une update</text:p>
-   <text:p text:style-name="P9">copier corps_diplomatique/video_<text:span text:style-name="T17">player</text:span>/autostart.sh d<text:span text:style-name="T17">ans</text:span>s le home</text:p>
-   <text:p text:style-name="P40">copier le fichier act1.mov de la sauvegarde dans le repertoir video_player.</text:p>
-   <text:p text:style-name="P9">ds les preferences reseaux fixer l&apos;adresse ip comme prevue ds le tableu ci dessu<text:span text:style-name="T17">s</text:span>.</text:p>
-   <text:p text:style-name="P9">Redemarer.</text:p>
+   <text:p text:style-name="P9">A l&apos;aide de l&apos;outils « createur de disque de demarage » disponible sous ubuntu, créer une cle usb bootable a partir de l&apos;iso « nusmuk » <text:span text:style-name="T21">diponible dans /saved/</text:span>. booter dessus depuis nicolas (si nicolas refuse de booter sur la cle usb, mettre le DD ds une autre machine).</text:p>
+   <text:p text:style-name="P9">Booter sur la cle, installer le systeme sur la premiere partition (la plus petite, ne pas toucher a la partition de sauvegarde), redemarer.</text:p>
+   <text:p text:style-name="P9"><text:soft-page-break/>Suprimer le repertoir « miguel » du home, copier le repertoir « corps diplomatique » de la partition de sauvegarde ds le home.</text:p>
+   <text:p text:style-name="P9">Ds un terminal, cd corps_diplomatique et git pull afin de faire une update <text:span text:style-name="T21">(facultatif)</text:span></text:p>
+   <text:p text:style-name="P9">copier corps_diplomatique/video_<text:span text:style-name="T17">player</text:span>/autostart.sh d<text:span text:style-name="T17">an</text:span>s le home</text:p>
+   <text:p text:style-name="P10">copier le fichier act1.mov de la sauvegarde dans le repertoir <text:span text:style-name="T21">corps_diplomatique/</text:span>video_player.</text:p>
+   <text:p text:style-name="P9">ds les preferences reseaux fixer l&apos;adresse ip comme prevue ds le table<text:span text:style-name="T21">au</text:span> ci dessu<text:span text:style-name="T17">s</text:span>.</text:p>
+   <text:p text:style-name="P9">Redemar<text:span text:style-name="T21">r</text:span>er.</text:p>
    <text:p text:style-name="Text_20_body"/>
+   <text:h text:style-name="Heading_20_1" text:outline-level="1">Urgence<text:span text:style-name="T19">s</text:span></text:h>
+   <text:p text:style-name="P44">En cas d&apos;urgence : hotline telephonique : </text:p>
+   <text:p text:style-name="P44">Robin : 06 19 27 73 79</text:p>
+   <text:p text:style-name="P44">Antoine : 06 20 15 56 72 (français) ou 00 32 4 86 74 29 54</text:p>
+   <text:p text:style-name="P44">Cyrille : ch@chnry .net (plus rapide) ou 09 50 51 51 85</text:p>
   </office:text>
  </office:body>
 </office:document>
