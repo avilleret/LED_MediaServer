@@ -78,7 +78,10 @@ public class PixelPusher_server {
 		registry.setAntiLog(true); // set anti-log level rule for pixels
 		registry.setAutoThrottle(true);
 
-		oscP5 = new OscP5(this, 10001);
+		OscProperties oscProperties = new OscProperties();
+		oscProperties.setListeningPort(10001);
+		oscProperties.setDatagramSize(20000);
+		oscP5 = new OscP5(this, oscProperties);
 		oscP5.plug(this, "pushBundle", "/pp");
 		oscP5.plug(this, "pushStrip", "/s");
 		oscP5.plug(this, "pushRpi", "/r"); // push strip to Raspberry Pi pixel-push
