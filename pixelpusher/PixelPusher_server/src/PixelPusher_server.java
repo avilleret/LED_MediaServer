@@ -77,6 +77,7 @@ public class PixelPusher_server {
 		// registry.useOverallBrightnessScale = true;
 		registry.setAntiLog(true); // set anti-log level rule for pixels
 		registry.setAutoThrottle(true);
+		registry.disableExpiry();
 
 		OscProperties oscProperties = new OscProperties();
 		oscProperties.setListeningPort(10001);
