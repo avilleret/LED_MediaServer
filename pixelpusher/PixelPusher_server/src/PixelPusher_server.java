@@ -82,7 +82,7 @@ public class PixelPusher_server {
 		oscProperties.setListeningPort(10001);
 		oscProperties.setDatagramSize(20000);
 		oscP5 = new OscP5(this, oscProperties);
-		oscP5.plug(this, "pushBundle", "/pp");
+		oscP5.plug(this, "pushBan", "/b");
 		oscP5.plug(this, "pushStrip", "/s");
 		oscP5.plug(this, "pushRpi", "/r"); // push strip to Raspberry Pi pixel-push
 		oscP5.plug(this, "setAll", "/all");
@@ -151,23 +151,32 @@ public class PixelPusher_server {
 		}
 	}
 
-	void pushBundle(byte[] blob) {
-		System.out.println("### received an osc message /pp with " + blob.length
+	void pushBan(int banId, byte[] blob) {
+		System.out.println("### received an osc message /b with id " + banId + " and " + blob.length
 				+ " values");
-
 		if (ppObserver.hasStrips) {
 			registry.startPushing();
+			List<PixelPusher> group1 = registry.getPushers(1);
+			List<Strip> strips = null;
+			for ( PixelPusher pusher : group1 ){
+				if ( pusher.getControllerOrdinal() == banId ){
+					strips=pusher.getStrips();
+				}
+			}
+			if ( strips == null ) {
+				// System.err.println("La banniere " + stripId/8 + " n'est pas en ligne !");
+				return;
+			}
+
 			int a = 0;
 			Pixel px = new Pixel();
-			List<Strip> strips = registry.getStrips();
 
 			for (Strip strip : strips) {
-				for (int i = 0; i < strip.getLength()
-						&& (a + 3 < blob.length / 3); i++) {
+				for (int i = 0; i < strip.getLength(); i++) {
 					px.red =  (byte) (blob[a] & 0xFF);
 					px.green = (byte) (blob[a+1] & 0xFF);
 					px.blue  = (byte) (blob[a+2] & 0xFF);
-					strip.setPixel(px, i);
+					strip.setPixel(px, pixelMap[i]);
 					a += 3;
 				}
 			}
