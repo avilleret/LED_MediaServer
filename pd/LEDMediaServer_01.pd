@@ -1,4 +1,4 @@
-#N canvas 694 381 531 379 10;
+#N canvas 695 355 531 379 10;
 #X declare -path ../osc;
 #X declare -path ../osc;
 #X declare -path ../osc;
@@ -2073,7 +2073,7 @@
 #X text 350 75 2014 - Antoine Villeret;
 #X obj 8 45 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#N canvas 677 151 1114 885 rx_clavier 0;
+#N canvas 165 114 1114 885 rx_clavier 0;
 #X obj 31 11 netreceive -u 9011;
 #X obj 31 31 route ping;
 #X obj 31 51 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
@@ -2118,7 +2118,7 @@
 #X obj 346 627 symbol;
 #X obj 362 655 list prepend set;
 #X obj 362 679 list trim;
-#X msg 362 711 C QUOI ANNEE LUMIERE?;
+#X msg 362 711 CHECK;
 #X msg 246 585 symbol;
 #X obj 599 292 list length;
 #X obj 597 313 - 1;
@@ -3165,7 +3165,7 @@ RGB \, type BYTE;
 #X connect 18 0 12 0;
 #X connect 19 0 18 0;
 #X restore 28 44 pd init;
-#N canvas 1 120 1299 877 winamp 0;
+#N canvas 1 122 1265 877 winamp 0;
 #X obj 109 383 loadbang;
 #X obj 487 377 loadbang;
 #X obj 488 564 pix_texture;
@@ -3199,15 +3199,15 @@ RGB \, type BYTE;
 #X obj 47 760 colorRGB;
 #X obj 41 840 accumrotate;
 #X obj 374 202 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 1584 1;
+-1 -1 0 1;
 #X obj 392 202 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 3541 1;
+-1 -1 0 1;
 #X obj 372 342 resample 50;
 #X obj 402 362 resample 50;
 #X obj 47 711 translateXYZ 0 0 -1;
 #X msg 70 924 draw line \, width 1;
 #X obj 428 202 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 903 1;
+-1 -1 0 1;
 #X obj 598 357 resample 50;
 #N canvas 497 755 450 300 rnd_color 0;
 #X obj 26 64 metro 50;
@@ -3371,7 +3371,7 @@ RGB \, type BYTE;
 #X obj 260 326 max 5;
 #X obj 263 351 min 50;
 #X obj 410 202 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 5083 1;
+-1 -1 0 1;
 #X obj 431 84 rmstodb;
 #X obj 431 106 * 1.27;
 #X obj 272 91 rmstodb;
@@ -3762,11 +3762,9 @@ RGB \, type BYTE;
 #X connect 181 0 163 0;
 #X connect 182 0 156 2;
 #X restore 34 222 pd winamp;
-#X obj 12 221 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
 #X obj 14 285 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#N canvas 944 755 450 300 test_afficheur 0;
+#N canvas 829 699 450 300 test_afficheur 0;
 #X obj 45 94 spigot 0;
 #X obj 45 126 circle 1;
 #X obj 171 30 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
@@ -3818,7 +3816,7 @@ RGB \, type BYTE;
 #X connect 2 0 3 0;
 #X connect 3 0 5 0;
 #X connect 4 0 0 0;
-#X restore 98 223 pd winamp_on;
+#X restore 97 222 pd winamp_on;
 #X obj 10 194 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #N canvas 523 496 418 510 OSC 0;
@@ -4172,7 +4170,7 @@ RGB \, type BYTE;
 1;
 #X obj 15 307 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#N canvas 614 275 837 780 poste_de_control 0;
+#N canvas 436 219 837 780 poste_de_control 0;
 #X obj 58 81 metro 50;
 #X obj 58 58 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
 ;
@@ -4205,7 +4203,7 @@ RGB \, type BYTE;
 ;
 #X msg 98 283 send /home/pi/Corps_Diplomatique/rpi_desktop/start_tail.sh
 ;
-#X msg 118 312 send /home/pi/Corps_Diplomatique/rpi_desktop/script_fenettres.sh
+#X msg 117 314 send /home/pi/Corps_Diplomatique/rpi_desktop/script_fenettres.sh
 ;
 #X msg 90 255 send /home/pi/Corps_Diplomatique/rpi_desktop/start_ls.sh
 ;
@@ -4229,6 +4227,8 @@ RGB \, type BYTE;
 #X obj 444 29 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X text 476 29 extinction;
+#X text 472 356 message à maman;
+#X text 468 346 fenetre blanche;
 #X connect 0 0 4 0;
 #X connect 0 0 5 0;
 #X connect 1 0 0 0;
@@ -4287,7 +4287,7 @@ RGB \, type BYTE;
 #X connect 42 0 1 0;
 #X connect 43 0 31 0;
 #X restore 35 266 pd poste_de_control;
-#N canvas 43 268 1313 778 video_hublot 0;
+#N canvas 1 221 1265 778 video_hublot 0;
 #X obj 101 578 metro 1000;
 #X obj 101 557 loadbang;
 #X obj 23 729 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
@@ -4506,15 +4506,28 @@ acc1 acc2 acc3 acc4 acc5, f 92;
 #X text 42 0 print;
 #X obj 96 0 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
 ;
+#X obj 218 154 cnv 15 200 60 empty empty Winamp 60 30 0 28 -233017
+-66577 0;
+#X obj 227 163 tgl 42 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X text 276 197 appuie sur ENTER;
+#X obj 227 106 key;
+#X obj 227 128 sel 10;
+#X obj 270 106 gemkeyboard;
+#X obj 270 128 sel 36;
 #X connect 1 0 0 0;
 #X connect 4 0 10 0;
-#X connect 5 0 16 0;
-#X connect 12 0 11 0;
-#X connect 12 0 15 0;
-#X connect 13 0 14 0;
-#X connect 15 0 12 0;
-#X connect 18 0 17 1;
-#X connect 19 0 20 0;
+#X connect 5 0 15 0;
+#X connect 12 0 13 0;
+#X connect 14 0 28 0;
+#X connect 17 0 16 1;
+#X connect 18 0 19 0;
+#X connect 20 0 22 0;
 #X connect 21 0 23 0;
-#X connect 22 0 24 0;
-#X connect 27 0 17 2;
+#X connect 26 0 16 2;
+#X connect 28 0 11 0;
+#X connect 28 0 14 0;
+#X connect 30 0 31 0;
+#X connect 31 0 28 0;
+#X connect 32 0 33 0;
+#X connect 33 0 28 0;
